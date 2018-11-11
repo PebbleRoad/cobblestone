@@ -1,0 +1,71 @@
+@include set(baseline, 1rem);
+
+@include set(
+  font-family,
+  (
+    sans: (
+      'Open Sans',
+      sans-serif,
+    ),
+    accent: (
+      'Roboto',
+      sans-serif,
+    ),
+  )
+);
+
+@include set(
+  font-size,
+  (
+    2xl: (
+      _: rem(28),
+      tablet: rem(36),
+    ),
+    xl: (
+      _: rem(24),
+      tablet: rem(28),
+    ),
+    l: rem(20),
+    m: rem(16),
+    s: rem(14),
+    xs: rem(12),
+    0: 0,
+  )
+);
+
+@include set(
+  line-height,
+  (
+    2xl: (
+      _: rem(36),
+      tablet: rem(40),
+    ),
+    xl: (
+      _: rem(32),
+      tablet: rem(36),
+    ),
+    l: rem(28),
+    m: rem(24),
+    s: rem(20),
+    xs: rem(16),
+    0: 0,
+  )
+);
+
+@include set(
+  font-weight,
+  (
+    regular: 400,
+    semibold: 600,
+    bold: 700,
+    extrabold: 800,
+    black: 900,
+  )
+);
+
+@include set(
+  letter-spacing,
+  (
+    loose: 0.0667em,
+  )
+);

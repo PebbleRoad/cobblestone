@@ -1,0 +1,19 @@
+///
+// This file imports the @scarab/core and @scarab/carapace libraries,
+// configures them with the project's config, and generates CSS utility classes
+///
+
+// Import the @scarab/core library
+@import '~@scarab/core/_';
+
+// Import config from the `tokens/` folder
+@import 'tokens/_';
+
+// Import the @scarab/carapace library
+@import '~@scarab/carapace/_';
+
+// Import custom Carapace module config from the `config/` folder
+@import 'config/modules';
+
+// Generate CSS utility classes
+@import '~@scarab/carapace/classes.common';

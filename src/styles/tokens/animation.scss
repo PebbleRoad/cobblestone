@@ -1,0 +1,13 @@
+@include set(
+  duration,
+  (
+    s: 0.2s,
+  )
+);
+
+@include set(
+  easing,
+  (
+    default: ease-out,
+  )
+);

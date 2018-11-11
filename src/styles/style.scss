@@ -1,0 +1,9 @@
+// Import design token configuration
+@import 'tokens/_';
+
+// Import CSS reset
+@import 'reset';
+
+// Import global app styles
+@import 'base';
+@import 'typography/_';

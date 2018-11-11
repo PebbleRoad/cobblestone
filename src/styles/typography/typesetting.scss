@@ -1,0 +1,22 @@
+///
+// Provides scoping for base element styling.
+///
+
+.typeset {
+  h1 {
+    @include type-scale(2xl);
+    @include responsive((margin-top, margin-bottom), (
+      _: s(m)
+    ));
+
+    font-weight: fw(bold);
+  }
+
+  strong {
+    font-weight: fw(bold);
+  }
+
+  em {
+    font-style: fs(italic);
+  }
+}

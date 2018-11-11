@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+$monospace-font: ('Source Code Pro', monospace, monospace);
+$font-size-small: 0.8rem;
+
+#root {
+  .vue-info {
+    @import 'hljs-themes/github';
+
+    padding: 0 2rem 2rem;
+
+    .info-content {
+      margin: 0 -2rem 2rem;
+    }
+
+    .info-content ~ div {
+      font-size: 1rem;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      // Props table
+      &:last-child {
+        overflow-x: scroll;
+      }
+    }
+
+    .component-name {
+      display: none;
+    }
+
+    .section-title {
+      margin-top: 1em;
+      border-bottom: none;
+      font-size: $font-size-small;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .props {
+      font-size: $font-size-small;
+    }
+
+    .props-table-row,
+    .hljs {
+      font-family: $monospace-font;
+    }
+
+    .hljs {
+      font-size: $font-size-small;
+      padding: 1rem !important;
+    }
+  }
+}

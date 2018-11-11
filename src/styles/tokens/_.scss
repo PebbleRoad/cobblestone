@@ -1,0 +1,11 @@
+// Import the @scarab/core library
+@import '~@scarab/core/_';
+
+// Import design token configuration
+@import 'appearance';
+@import 'breakpoints';
+@import 'spacing';
+@import 'layout';
+@import 'typography';
+@import 'colors';
+@import 'animation';

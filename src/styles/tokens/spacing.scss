@@ -1,0 +1,15 @@
+@include set(
+  spacing,
+  (
+    4xl: rem(96),
+    3xl: rem(64),
+    2xl: rem(48),
+    xl: rem(32),
+    l: rem(24),
+    m: rem(16),
+    s: rem(12),
+    xs: rem(8),
+    2xs: rem(4),
+    0: 0,
+  )
+);

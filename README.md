@@ -39,16 +39,21 @@ Clone this repository and use it as a boilerplate. CLI utility for project scaff
 
 | `$ yarn` | Description |
 | :-- | :-- |
-| **`dev`** | Start the app development server <br>**Dev server:**[`http://localhost:3000/`](http://localhost:3000/) |
-| **`fetch`** | Fetch data from the CMS and write to `src/data/`  |
-| **`build`** | Generate the optimized production app build in `dist/` |
-| **`serve`** | Serve the `dist/` folder locally <br>**Production build:** [`http://localhost:3333/`](http://localhost:3333/) |
-| **`analyze`** | Run and display an analysis of the Webpack app bundle size |
-| **`storybook`** | Start the Storybook development server <br>**Storybook dev server:** [`http://localhost:4000/`](http://localhost:4000/) |
-| **`storybook:build`** | Generate the optimized production Storybook build in the `.storybook/dist` folder |
-| **`storybook:serve`** | Serve the `.storybook/dist/` folder locally <br>**URL:** [`http://localhost:4444/`](http://localhost:4444/) |
-| **`test`** | Run all Jest, Cypress and Backstop tests |
-| **`cypress`** | Open the Cypress dashboard |
+| `dev` | Start the app development server: <br>[**`localhost:3000/`**](http://localhost:3000/) |
+| `fetch` | Fetch data from the CMS and write to `src/data/`  |
+| `build` | Generate the optimized production app build in `dist/` |
+| `serve` | Serve the `dist/` folder locally: <br>[**`localhost:3333/`**](http://localhost:3333/) |
+| `analyze` | Run and display an analysis of the Webpack app bundle size |
+| `storybook` | Start the Storybook development server: <br>[**`localhost:4000/`**](http://localhost:4000/) |
+| `storybook:build` | Export a static Storybook to `.storybook/dist` |
+| `storybook:serve` | Serve the `.storybook/dist/` folder locally: <br>[**`localhost:4444/`**](http://localhost:4444/) |
+| `test` | Run all Jest, Cypress and Backstop tests |
+| `├─ test:cypress` | Run all Cypress tests |
+| `├─ test:jest` | Run all Jest tests |
+| `└─ test:backstop` | Run all Backstop tests |
+| `cypress:open` | Open the Cypress dashboard |
+| `backstop:open` | Open the Backstop VRT report |
+| `backstop:approve` | Approve the current Backstop snapshots |
 
 ## Project structure
 

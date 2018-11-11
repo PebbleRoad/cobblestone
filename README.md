@@ -4,7 +4,7 @@
 # Cobblestone
 **Modern static site framework and generator**
 
-[Getting started](#getting-started) · [Features](#features) · [Package scripts](#package-scripts) · [Project structure](#project-structure) · [Developer guides](#developer-guides) · [FAQ](#faq)
+[Getting started](#getting-started) · [Features](#features) · [Package scripts](#package-scripts) · [Project structure](#project-structure) · [Recipes](#recipes) · [FAQ](#faq)
 
 ---
 
@@ -12,14 +12,16 @@
 
 ## Getting started
 
-1. Install **Cobblestone CLI**
+Clone this repository and use it as a boilerplate. CLI utility for project scaffolding is WIP.
+
+<!-- 1. Install **Cobblestone CLI**
     ```
     $ yarn global add @pebbleroad/cobblestone-cli
     ```
-2. Create a new Cobblestone project
+1. Create a new Cobblestone project
     ```
     $ cobblestone create my-project
-    ```
+    ``` -->
 
 ## Features
 - 📦&ensp;[**Webpack**](https://webpack.js.org/) for dev server and production build
@@ -133,14 +135,44 @@ The `lib/` folder is meant for customized internal scripts and utilities that ma
 
 ---
 
-## Developer guides
+## Recipes
 
-- Configuring app routes
-- Creating router views
-- Managing design tokens
-- Creating new Vue components
-- Writing and running tests
-- Configuring Webpack
+### Configuring app routes
+
+Routes (i.e. URL's) for the app are defined in `src/app/routes.js`. Visit the  [Vue router documentation](https://router.vuejs.org/) for more information.
+
+### Creating router views
+
+Vue components in `src/app/views/` serve as router views.
+
+### Managing design tokens
+
+Design tokens are defined in `src/styles/tokens/`.
+
+Cobblestone's Webpack configuration makes it possible to use Scarab's design tokens and helper functions anywhere in the `src/styles/` folder and also in Vue SFC files.
+
+### Creating new components
+
+To create a new component called `ComponentName`, create the following files:
+
+- `src/components/ComponentName/ComponentName.md`
+- `src/components/ComponentName/ComponentName.stories.js`
+- `src/components/ComponentName/ComponentName.test.js`
+- `src/components/ComponentName/ComponentName.vue`
+
+CLI utility for component scaffolding is WIP.
+
+### Writing component stories
+
+Refer to the [Storybook documentation](https://storybook.js.org/basics/guide-vue/#write-your-stories) and example component story for now.
+
+### Writing and running tests
+
+WIP.
+
+### Configuring Webpack
+
+WIP.
 
 ## FAQ
 - How to make Vue devtools work in Storybook?  

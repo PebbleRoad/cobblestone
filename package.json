@@ -13,6 +13,9 @@
     "storybook:build": "build-storybook -c .storybook -o .storybook/dist",
     "storybook:serve": "static --gzip --port 4444 --host-address 0.0.0.0 --cache 144000 .storybook/dist",
     "test": "echo 'no tests written yet';",
+    "test:jest": "echo 'no tests written yet';",
+    "test:cypress": "echo 'no tests written yet';",
+    "test:backstop": "echo 'no tests written yet';",
     "cypress:open": "cypress open"
   },
   "config": {

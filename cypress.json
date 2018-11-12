@@ -1,6 +1,6 @@
 {
   "baseUrl": "http://0.0.0.0:3000",
-  "fixturesFolder": "tests/cypress/fixtures",
+  "fixturesFolder": "tests/fixtures",
   "integrationFolder": "tests/cypress/integration",
   "screenshotsFolder": "tests/cypress/screenshots",
   "videosFolder": "tests/cypress/videos",

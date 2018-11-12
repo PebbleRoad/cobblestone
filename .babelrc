@@ -7,13 +7,31 @@
     [
       "@babel/preset-env",
       {
-        "modules": false,
-        "targets": {
-          "browsers": [
-            "last 2 versions"
-          ]
-        }
+        "modules": false
       }
     ]
-  ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "require-context-hook",
+        [
+          "module-resolver",
+          {
+            "root": ["./src"],
+            "alias": {
+              "~Views": "./src/app/views",
+              "~App": "./src/app",
+              "~Data": "./src/data",
+              "~Styles": "./src/styles",
+              "~Scripts": "./src/scripts",
+              "~Assets": "./src/assets",
+              "~Components": "./src/components",
+            }
+          }
+        ]
+      ],
+      "presets": [["@babel/preset-env"]]
+    }
+  }
 }

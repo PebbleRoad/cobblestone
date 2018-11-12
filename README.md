@@ -180,5 +180,5 @@ WIP.
 WIP.
 
 ## FAQ
-- How to make Vue devtools work in Storybook?  
-  https://github.com/vuejs/vue-devtools/blob/master/shells/electron/README.md
+- **Why can't I use my browser's Vue devtools extension in Storybook?**  
+This is a [known issue](https://github.com/storybooks/storybook/issues/1708). As a workaround, Cobblestone uses the `@vue/devtools` package, a standalone Electron version of the Vue devtools. Running `$ yarn storybook` will automatically launch the Vue devtools window. To relaunch the devtools window, run `$ yarn run vue-devtools`.

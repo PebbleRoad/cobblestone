@@ -1,5 +1,5 @@
-import { storiesOf } from '@storybook/vue';
-import readme from './CobblestoneHero.md';
+import { storiesOf } from "@storybook/vue";
+import readme from "./CobblestoneHero.md";
 
 const withReadme = {
   notes: {
@@ -7,10 +7,10 @@ const withReadme = {
   },
 };
 
-storiesOf('CobblestoneHero', module)
-  .add('default props', () => '<CobblestoneHero />', withReadme)
+storiesOf("CobblestoneHero", module)
+  .add("default props", () => "<CobblestoneHero />", withReadme)
   .add(
-    'custom projectName',
+    "custom projectName",
     () => `
     <CobblestoneHero
       projectName="My Project"

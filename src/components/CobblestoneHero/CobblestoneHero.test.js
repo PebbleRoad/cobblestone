@@ -1,5 +1,3 @@
-describe('CobblestoneHero', () => {
-  it('links to the Cobblestone Github repo', () {
-    
-  }) 
-})
+describe("CobblestoneHero", () => {
+  it("links to the Cobblestone Github repo", () => {});
+});

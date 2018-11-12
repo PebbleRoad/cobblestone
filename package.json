@@ -32,8 +32,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,vue,css,scss,md}": [
-      "eslint --fix",
+    "*.{js,json,vue,css,scss,md}": [
+      "prettier --write",
       "git add"
     ]
   },
@@ -71,10 +71,6 @@
     "cypress": "^3.1.1",
     "del": "^3.0.0",
     "duplicate-package-checker-webpack-plugin": "^3.0.0",
-    "eslint": "^5.9.0",
-    "eslint-config-prettier": "^3.2.0",
-    "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-vue": "^4.7.1",
     "favicons-webpack-plugin": "^0.0.9",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "hard-source-webpack-plugin": "^0.12.0",

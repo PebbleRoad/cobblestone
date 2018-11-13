@@ -10,9 +10,9 @@ tests/cypress/screenshots/
 tests/cypress/videos/
 
 # backstop artifacts
-tests/backstop/backstop_data/bitmaps_test/
-tests/backstop/backstop_data/ci_report/
-tests/backstop/backstop_data/html_report/
+tests/backstop/bitmaps_test/
+tests/backstop/ci_report/
+tests/backstop/html_report/
 
 # Dependency directory
 node_modules/

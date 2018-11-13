@@ -21,6 +21,7 @@ module.exports = merge(baseConfig, {
     compress: true,
     noInfo: true,
     port: 3000,
+    disableHostCheck: true,
     overlay: true,
   },
 });

@@ -10,9 +10,14 @@
         <h1>Welcome to {{ projectName }}!</h1>
         <p v-if="showHelp">
           You should start with the
-          <a href="https://github.com/PebbleRoad/cobblestone"
-            ><strong>README</strong></a
+          <a
+            href="https://github.com/PebbleRoad/cobblestone"
+            target="_blank"
+            noopener
+            noreferrer
           >
+            <strong>README</strong>
+          </a>
           :)
         </p>
       </div>
@@ -22,11 +27,11 @@
 
 <script>
 export default {
-  name: 'CobblestoneHero',
+  name: "CobblestoneHero",
   props: {
     projectName: {
       type: String,
-      default: 'Cobblestone',
+      default: "Cobblestone",
     },
     showHelp: {
       type: Boolean,
@@ -35,7 +40,7 @@ export default {
   },
   methods: {
     _handleClick: function(e) {
-      this.$emit('image:clicked', e);
+      this.$emit("image:clicked", e);
     },
   },
 };

@@ -25,6 +25,9 @@ exports[`Storyshots CobblestoneHero custom projectName 1`] = `
         
         <a
           href="https://github.com/PebbleRoad/cobblestone"
+          noopener=""
+          noreferrer=""
+          target="_blank"
         >
           <strong>
             README
@@ -64,6 +67,9 @@ exports[`Storyshots CobblestoneHero default props 1`] = `
         
         <a
           href="https://github.com/PebbleRoad/cobblestone"
+          noopener=""
+          noreferrer=""
+          target="_blank"
         >
           <strong>
             README

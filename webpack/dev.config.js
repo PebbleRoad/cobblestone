@@ -1,13 +1,13 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require("path");
+const webpack = require("webpack");
 // const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
-const merge = require('webpack-merge');
+const merge = require("webpack-merge");
 
-const baseConfig = require('./base.config.js');
+const baseConfig = require("./base.config.js");
 
 module.exports = merge(baseConfig, {
-  mode: 'development',
-  devtool: 'cheap-module-eval-source-map',
+  mode: "development",
+  devtool: "cheap-module-eval-source-map",
   plugins: [
     ///
     // Speed up concurrent dev builds
@@ -21,7 +21,6 @@ module.exports = merge(baseConfig, {
     compress: true,
     noInfo: true,
     port: 3000,
-    open: true,
     overlay: true,
   },
 });

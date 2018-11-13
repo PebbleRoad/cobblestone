@@ -1,6 +1,10 @@
 # Distribution folders
 dist/
-.storybook/dist
+.storybook/dist/*
+
+# Note: keep this .gitkeep or else 
+# `$ start-storybook -s` will error
+!.storybook/dist/.gitkeep
 
 # jest artifacts
 tests/jest/coverage/

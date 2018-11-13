@@ -55,6 +55,7 @@
     "@storybook/addon-viewport": "^4.0.4",
     "@storybook/addons": "^4.0.4",
     "@storybook/vue": "^4.0.4",
+    "@vue/test-utils": "^1.0.0-beta.25",
     "autoprefixer": "^9.3.1",
     "axe-cli": "^3.0.0",
     "axe-core": "^3.1.2",

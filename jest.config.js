@@ -13,5 +13,4 @@ module.exports = {
   coverageDirectory: "<rootDir>/tests/jest/coverage",
   setupFiles: ["<rootDir>/tests/jest/setupTests.js"],
   snapshotSerializers: ["jest-serializer-vue"],
-  verbose: true,
 };

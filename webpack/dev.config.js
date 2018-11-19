@@ -18,10 +18,13 @@ module.exports = merge(baseConfig, {
   ],
   devServer: {
     historyApiFallback: true,
+    clientLogLevel: "none",
     compress: true,
     noInfo: true,
     port: 3000,
     disableHostCheck: true,
+    contentBase: path.resolve(__dirname, "../dist"),
+    watchContentBase: true,
     overlay: true,
   },
 });

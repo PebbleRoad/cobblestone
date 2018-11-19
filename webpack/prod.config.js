@@ -1,27 +1,27 @@
-const path = require('path');
-const webpack = require('webpack');
-const merge = require('webpack-merge');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const CompressionPlugin = require('compression-webpack-plugin');
-const OfflinePlugin = require('offline-plugin');
-const PrerenderSPAPlugin = require('prerender-spa-plugin');
-const PuppeteerRenderer = require('@prerenderer/renderer-puppeteer');
-const baseConfig = require('./base.config.js');
-const routes = require('../src/app/routes.js');
+const path = require("path");
+const webpack = require("webpack");
+const merge = require("webpack-merge");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
+const ImageminPlugin = require("imagemin-webpack-plugin").default;
+const CompressionPlugin = require("compression-webpack-plugin");
+const OfflinePlugin = require("offline-plugin");
+const PrerenderSPAPlugin = require("prerender-spa-plugin");
+const PuppeteerRenderer = require("@prerenderer/renderer-puppeteer");
+const baseConfig = require("./base.config.js");
+const routes = require("../src/app/routes.js");
 
 module.exports = merge(baseConfig, {
-  mode: 'production',
+  mode: "production",
   plugins: [
     ///
     // Extract imported CSS to .css files
     // ==================================
     ///
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].min.css',
-      chunkFilename: '[id].[hash].min.css',
+      filename: "[name].[hash].min.css",
+      chunkFilename: "[id].[hash].min.css",
     }),
 
     ///
@@ -38,7 +38,7 @@ module.exports = merge(baseConfig, {
         optimizationLevel: 5,
       },
       pngquant: {
-        quality: '80',
+        quality: "80",
       },
       gifsicle: {
         interlaced: true,
@@ -58,25 +58,23 @@ module.exports = merge(baseConfig, {
     ///
     new PrerenderSPAPlugin({
       // Path to the app to pre-render
-      staticDir: path.join(__dirname, '../dist'),
+      staticDir: path.join(__dirname, "../dist"),
 
       // Path to output the pre-rendered, static HTML
-      outputDir: path.join(__dirname, '../dist'),
+      outputDir: path.join(__dirname, "../dist"),
 
       // Location of index.html
-      indexPath: path.join(__dirname, '../dist/index.html'),
+      indexPath: path.join(__dirname, "../dist/index.html"),
 
       // Routes to render
-      routes: [
-        '/'
-      ],
+      routes: ["/"],
 
       renderer: new PuppeteerRenderer({
-        renderAfterDocumentEvent: 'app.rendered',
+        renderAfterDocumentEvent: "app.rendered",
         inject: {
           prerendered: true,
         },
-        injectProperty: '__PRERENDER_INJECTED',
+        injectProperty: "__PRERENDER_INJECTED",
         headless: true,
       }),
     }),
@@ -111,6 +109,11 @@ module.exports = merge(baseConfig, {
       cache: true,
     }),
 
+    new CompressionPlugin({
+      test: /\.ico(\?.*)?$/i,
+      cache: true,
+    }),
+
     ///
     // Add offline service worker
     // ==========================
@@ -121,11 +124,9 @@ module.exports = merge(baseConfig, {
   optimization: {
     minimizer: [
       new TerserPlugin({
-        parallel: true
+        parallel: true,
       }),
-      new OptimizeCSSAssetsPlugin({
-
-      })
+      new OptimizeCSSAssetsPlugin({}),
     ],
   },
 });

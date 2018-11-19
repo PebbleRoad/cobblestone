@@ -15,8 +15,8 @@ const DEV_MODE = process.env.NODE_ENV !== "production";
 
 module.exports = {
   entry: {
-    app: path.join(__dirname, "../src/app/index.js"),
-    carapace: path.join(__dirname, "../src/styles/carapace.scss"),
+    app: path.resolve(__dirname, "../src/app/index.js"),
+    carapace: path.resolve(__dirname, "../src/styles/carapace.scss"),
   },
   output: {
     filename: DEV_MODE
@@ -25,7 +25,7 @@ module.exports = {
     chunkFilename: DEV_MODE
       ? "[name].bundle.[chunkhash].js"
       : "[name].bundle.[chunkhash].min.js",
-    path: path.join(__dirname, "../dist"),
+    path: path.resolve(__dirname, "../dist"),
     publicPath: "/",
   },
   module: {
@@ -68,7 +68,7 @@ module.exports = {
             options: DEV_MODE
               ? {}
               : {
-                  publicPath: path.join(
+                  publicPath: path.resolve(
                     __dirname,
                     "../dist/~assets/stylesheets"
                   ),
@@ -91,7 +91,9 @@ module.exports = {
           {
             loader: "sass-resources-loader",
             options: {
-              resources: [path.join(__dirname, "../src/styles/tokens/_.scss")],
+              resources: [
+                path.resolve(__dirname, "../src/styles/tokens/_.scss"),
+              ],
             },
           },
         ],
@@ -148,7 +150,7 @@ module.exports = {
     // Delete build folder
     // ===================
     ///
-    new CleanWebpackPlugin([path.join(__dirname, "../dist/*")], {
+    new CleanWebpackPlugin([path.resolve(__dirname, "../dist/*")], {
       allowExternal: true,
     }),
 
@@ -163,8 +165,8 @@ module.exports = {
     // =======================
     ///
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "../src/public/index.html"),
-      filename: path.join(__dirname, "../dist/index.html"),
+      template: path.resolve(__dirname, "../src/public/index.html"),
+      filename: path.resolve(__dirname, "../dist/index.html"),
       minify: {
         collapseWhitespace: true,
         useShortDoctype: true,
@@ -179,12 +181,16 @@ module.exports = {
     ///
     new CopyWebpackPlugin([
       {
-        from: path.join(__dirname, "../src/assets/images"),
-        to: path.join(__dirname, `../dist/_assets/images`),
+        from: path.resolve(__dirname, "../src/public"),
+        to: path.resolve(__dirname, "../dist"),
       },
       {
-        from: path.join(__dirname, "../src/assets/fonts"),
-        to: path.join(__dirname, `../dist/_assets/fonts`),
+        from: path.resolve(__dirname, "../src/assets/images"),
+        to: path.resolve(__dirname, "../dist/_assets/images"),
+      },
+      {
+        from: path.resolve(__dirname, "../src/assets/fonts"),
+        to: path.resolve(__dirname, "../dist/_assets/fonts"),
       },
     ]),
 
@@ -196,7 +202,7 @@ module.exports = {
       title: pkg.config.project.name,
       appDescription: pkg.config.project.description,
       background: pkg.config.project.bgColor,
-      logo: path.join(__dirname, "../src/assets/favicon.png"),
+      logo: path.resolve(__dirname, "../src/assets/favicon.png"),
       prefix: "_assets/favicon/",
       cache: true,
       inject: true,

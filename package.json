@@ -16,7 +16,7 @@
     "test:jest": "NODE_ENV=test jest",
     "test:cypress": "start-test dev http-get://localhost:3000 cypress:run",
     "test:backstop": "start-test dev http-get://localhost:3000 backstop:run",
-    "cypress:open": "COBBLESTONE_NO_OPEN=true cypress open",
+    "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "backstop:report": "backstop openReport --config=backstop.config.js",
     "backstop:approve": "backstop approve --config=backstop.config.js",

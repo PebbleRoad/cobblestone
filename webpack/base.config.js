@@ -16,6 +16,7 @@ const DEV_MODE = process.env.NODE_ENV !== "production";
 module.exports = {
   entry: {
     app: path.resolve(__dirname, "../src/app/index.js"),
+    scripts: path.resolve(__dirname, "../src/scripts/index.js"),
     carapace: path.resolve(__dirname, "../src/styles/carapace.scss"),
   },
   output: {

@@ -3,7 +3,8 @@
     <div class="m:a">
       <div class="typeset contain ta:c nm-t:4xl">
         <img
-          src="/_assets/images/cobblestone.png"
+          class="lazyload"
+          data-src="/_assets/images/cobblestone.png"
           alt=""
           @click="_handleClick"
         />

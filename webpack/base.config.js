@@ -9,6 +9,7 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ScriptExtHtmlWebpackPlugin = require("script-ext-html-webpack-plugin");
 const WebappWebpackPlugin = require("webapp-webpack-plugin");
 
 const DEV_MODE = process.env.NODE_ENV !== "production";
@@ -16,8 +17,9 @@ const DEV_MODE = process.env.NODE_ENV !== "production";
 module.exports = {
   entry: {
     app: path.resolve(__dirname, "../src/app/index.js"),
-    scripts: path.resolve(__dirname, "../src/scripts/index.js"),
     carapace: path.resolve(__dirname, "../src/styles/carapace.scss"),
+    lazysizes: "lazysizes",
+    scripts: path.resolve(__dirname, "../src/scripts/index.js"),
   },
   output: {
     filename: DEV_MODE
@@ -174,6 +176,16 @@ module.exports = {
         minifyCSS: true,
         minifyJS: true,
       },
+    }),
+
+    ///
+    // Configure script extensions
+    // ===========================
+    ///
+    new ScriptExtHtmlWebpackPlugin({
+      defaultAttribute: "async",
+      defer: ["scripts"],
+      sync: ["app", "carapace"],
     }),
 
     ///

@@ -12,7 +12,8 @@ exports[`Storyshots CobblestoneHero custom projectName 1`] = `
     >
       <img
         alt=""
-        src="/_assets/images/cobblestone.png"
+        class="lazyload"
+        data-src="/_assets/images/cobblestone.png"
       />
        
       <h1>
@@ -54,7 +55,8 @@ exports[`Storyshots CobblestoneHero default props 1`] = `
     >
       <img
         alt=""
-        src="/_assets/images/cobblestone.png"
+        class="lazyload"
+        data-src="/_assets/images/cobblestone.png"
       />
        
       <h1>

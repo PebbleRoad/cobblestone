@@ -14,7 +14,7 @@
 
 ## Getting started
 
-Clone this repository and use it as a boilerplate. CLI utility for project scaffolding is WIP.
+Clone this repository and use it as a boilerplate. CLI utility for project scaffolding is a work-in-progress.
 
 <!-- 1. Install **Cobblestone CLI**
     ```
@@ -176,19 +176,19 @@ To create a new component called `ComponentName`, create the following files:
 - `src/components/ComponentName/ComponentName.test.js`
 - `src/components/ComponentName/ComponentName.vue`
 
-CLI utility for component scaffolding is WIP.
+CLI utility for component scaffolding is a work-in-progress.
 
 ### Writing component stories
 
-Refer to the [Storybook documentation](https://storybook.js.org/basics/guide-vue/#write-your-stories) and example component story for now.
+Refer to the [Storybook documentation](https://storybook.js.org/basics/guide-vue/#write-your-stories) and example component story.
 
 ### Writing and running tests
 
-WIP.
+Documentation for this section is a work-in-progress.
 
 ### Configuring Webpack
 
-WIP.
+Documentation for this section is a work-in-progress.
 
 ## FAQ
 

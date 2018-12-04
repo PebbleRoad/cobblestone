@@ -13,7 +13,7 @@ exports[`Storyshots CobblestoneHero custom projectName 1`] = `
       <img
         alt=""
         class="lazyload"
-        data-src="/_assets/images/cobblestone.png"
+        src="/_assets/images/cobblestone.png"
       />
        
       <h1>
@@ -56,7 +56,7 @@ exports[`Storyshots CobblestoneHero default props 1`] = `
       <img
         alt=""
         class="lazyload"
-        data-src="/_assets/images/cobblestone.png"
+        src="/_assets/images/cobblestone.png"
       />
        
       <h1>
@@ -84,4 +84,118 @@ exports[`Storyshots CobblestoneHero default props 1`] = `
     </div>
   </div>
 </div>
+`;
+
+exports[`Storyshots ExampleAxiosFetching 404 1`] = `
+<div>
+  <!---->
+   
+  <!---->
+   
+  <span
+    class="fs:i"
+  >
+    Loading...
+  </span>
+</div>
+`;
+
+exports[`Storyshots ExampleAxiosFetching delayed response 1`] = `
+<div>
+  <!---->
+   
+  <!---->
+   
+  <span
+    class="fs:i"
+  >
+    Loading...
+  </span>
+</div>
+`;
+
+exports[`Storyshots ExampleAxiosFetching invalid url 1`] = `
+<div>
+  <!---->
+   
+  <!---->
+   
+  <span
+    class="fs:i"
+  >
+    Loading...
+  </span>
+</div>
+`;
+
+exports[`Storyshots ExampleAxiosFetching successful response 1`] = `
+<div>
+  <!---->
+   
+  <!---->
+   
+  <span
+    class="fs:i"
+  >
+    Loading...
+  </span>
+</div>
+`;
+
+exports[`Storyshots ExampleLazyLoadedImg default 1`] = `
+<article>
+  <h1>
+    Lorem ipsum dolor sit amet consectetur.
+  </h1>
+   
+  <img
+    alt=""
+    class="lazyload"
+    data-src="/_assets/images/cobblestone.png"
+  />
+   
+  <div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perspiciatis mollitia dolor nostrum ullam itaque fugit at aliquid deleniti maxime?
+    </p>
+  </div>
+</article>
+`;
+
+exports[`Storyshots ExampleVueBaseComponent custom label 1`] = `
+<label
+  class="d:f fld:r ai:c ts:s"
+>
+  <span
+    class="ts:xs fw:bold"
+  >
+    What's your age?
+  </span>
+   
+  <input
+    class="m-x:xs ts:xs p:2xs"
+    type="text"
+  />
+   
+  <!---->
+</label>
+`;
+
+exports[`Storyshots ExampleVueBaseComponent default 1`] = `
+<label
+  class="d:f fld:r ai:c ts:s"
+>
+  <span
+    class="ts:xs fw:bold"
+  >
+    Enter numbers only:
+  </span>
+   
+  <input
+    class="m-x:xs ts:xs p:2xs"
+    type="text"
+  />
+   
+  <!---->
+</label>
 `;

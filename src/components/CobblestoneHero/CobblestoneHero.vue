@@ -4,11 +4,13 @@
       <div class="typeset contain ta:c nm-t:4xl">
         <img
           class="lazyload"
-          data-src="/_assets/images/cobblestone.png"
+          src="/_assets/images/cobblestone.png"
           alt=""
           @click="_handleClick"
         />
+
         <h1>Welcome to {{ projectName }}!</h1>
+
         <p v-if="showHelp">
           You should start with the
           <a

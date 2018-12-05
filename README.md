@@ -184,11 +184,26 @@ Refer to the [Storybook documentation](https://storybook.js.org/basics/guide-vue
 
 ### Writing and running tests
 
-Documentation for this section is a work-in-progress.
+#### Component unit tests
+
+Component unit tests are located inside the component folder, and exist as a `ComponentName.test.js` file.
+
+#### Integration/E2E tests
+
+Integration/E2E tests are located in the `tests/cypress/integration/` folder.
+
+#### Visual regression testing
+
+Backstop test scenarios are defined in `tests/backstop/scenarios.js`. Backstop configuration is defined in `backstop.config.js`.
 
 ### Configuring Webpack
 
-Documentation for this section is a work-in-progress.
+Webpack configuration is located in the `webpack/` folder. Cobblestone uses a merge strategy to handle Webpack configuration. The following configuration files are present by default:
+
+- `base.config.js` — Base Webpack configuration
+- `dev.config.js` — Configuration for development server
+- `prod.config.js` — Configuration for production build
+- `analyze.config.js` — Configuration for `webpack-bundle-analyzer`
 
 ## FAQ
 

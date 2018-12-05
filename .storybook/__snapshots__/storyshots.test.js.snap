@@ -199,3 +199,55 @@ exports[`Storyshots ExampleVueBaseComponent default 1`] = `
   <!---->
 </label>
 `;
+
+exports[`Storyshots ExampleVueContainerComponent default 1`] = `
+<div
+  class="stack-y:m"
+>
+  <form
+    action="#"
+  >
+    <label
+      class="d:f fld:r ai:c ts:s"
+    >
+      <span
+        class="ts:xs fw:bold"
+      >
+        Enter your age
+      </span>
+       
+      <input
+        class="m-x:xs ts:xs p:2xs"
+        type="text"
+      />
+       
+      <!---->
+    </label>
+     
+    <label
+      class="d:f fld:r ai:c ts:s"
+    >
+      <span
+        class="ts:xs fw:bold"
+      >
+        Enter your favourite number
+      </span>
+       
+      <input
+        class="m-x:xs ts:xs p:2xs"
+        type="text"
+      />
+       
+      <!---->
+    </label>
+     
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+   
+  <!---->
+</div>
+`;

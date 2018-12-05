@@ -31,6 +31,7 @@ Clone this repository and use it as a boilerplate. CLI utility for project scaff
 - 🖼&ensp;[**Vue.js**](https://vuejs.org) for routing, views, and components
 - ⚡️&ensp;[**Prerenderer**](https://github.com/chrisvfritz/prerender-spa-plugin/) for static-site generation from a SPA
 - 🎨&ensp;[**Sass**](https://sass-lang.com/), [**Scarab**](https://scarab.style), [**PostCSS**](https://github.com/postcss/postcss) for styling
+- 😴&ensp;[**lazysizes**](https://github.com/aFarkas/lazysizes) for lazy-loaded, responsive images
 - 🤖&ensp;[**Babel**](https://babeljs.io/), [**ES6+**](https://www.ecma-international.org/ecma-262/6.0/) for writing JavaScript
 - 📖&ensp;[**Storybook**](https://storybook.js.org) for UI component development environment
 - ✅&ensp;[**Jest**](https://jestjs.io/), [**Cypress**](https://cypress.io) and [**Backstop**](https://github.com/garris/BackstopJS) for testing

@@ -25,7 +25,7 @@ Make sure you have these installed:
 - [Node.js](https://nodejs.org/en/) + [Yarn](https://yarnpkg.com/en/)
 - [Docker](https://www.docker.com/) + [BackstopJS Docker image](https://hub.docker.com/r/backstopjs/backstopjs/)
 
-_CLI utility for project scaffolding is a work-in-progress._
+<!-- _CLI utility for project scaffolding is a work-in-progress._ -->
 
 <!-- 1. Install **Cobblestone CLI**
     ```
@@ -52,7 +52,7 @@ _CLI utility for project scaffolding is a work-in-progress._
 
 ## Package scripts
 
-The following table details scripts that can be executed with `yarn SCRIPT_NAME`:
+These scripts can be executed by running `yarn SCRIPT_NAME`:
 
 | Script name        | Description                                                  | Notes                                                    |
 | :----------------- | :----------------------------------------------------------- | :------------------------------------------------------- |
@@ -219,7 +219,7 @@ To create a new component called `ComponentName`, create the following files:
 - `src/components/ComponentName/ComponentName.test.js`
 - `src/components/ComponentName/ComponentName.vue`
 
-CLI utility for component scaffolding is a work-in-progress.
+_CLI utility for component scaffolding is a work-in-progress._
 
 ### Writing component stories
 

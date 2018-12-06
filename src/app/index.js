@@ -21,7 +21,7 @@ const root = new Vue({
   router,
   render: h => h(App),
   mounted() {
-    document.dispatchEvent(new Event("app.rendered"));
+    document.dispatchEvent(new CustomEvent("app.rendered"));
   },
 });
 

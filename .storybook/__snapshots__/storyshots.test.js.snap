@@ -2,86 +2,78 @@
 
 exports[`Storyshots CobblestoneHero custom projectName 1`] = `
 <div
-  class="d:f w:100 h:100vh"
+  class="d:f ai:c jc:c w:100 h:100vh"
 >
   <div
-    class="m:a"
+    class="typeset contain ta:c nm-t:4xl"
   >
-    <div
-      class="typeset contain ta:c nm-t:4xl"
-    >
-      <img
-        alt=""
-        class="lazyload"
-        src="/_assets/images/cobblestone.png"
-      />
-       
-      <h1>
-        Welcome to My Project!
-      </h1>
-       
-      <p>
-        
-        You should start with the
-        
-        <a
-          href="https://github.com/PebbleRoad/cobblestone"
-          noopener=""
-          noreferrer=""
-          target="_blank"
-        >
-          <strong>
-            README
-          </strong>
-        </a>
-        
-        :)
+    <img
+      alt=""
+      class="lazyload"
+      src="/_assets/images/cobblestone.png"
+    />
+     
+    <h1>
+      Welcome to My Project!
+    </h1>
+     
+    <p>
       
-      </p>
-    </div>
+      You should start with the
+      
+      <a
+        href="https://github.com/PebbleRoad/cobblestone"
+        noopener=""
+        noreferrer=""
+        target="_blank"
+      >
+        <strong>
+          README
+        </strong>
+      </a>
+      
+      :)
+    
+    </p>
   </div>
 </div>
 `;
 
 exports[`Storyshots CobblestoneHero default props 1`] = `
 <div
-  class="d:f w:100 h:100vh"
+  class="d:f ai:c jc:c w:100 h:100vh"
 >
   <div
-    class="m:a"
+    class="typeset contain ta:c nm-t:4xl"
   >
-    <div
-      class="typeset contain ta:c nm-t:4xl"
-    >
-      <img
-        alt=""
-        class="lazyload"
-        src="/_assets/images/cobblestone.png"
-      />
-       
-      <h1>
-        Welcome to Cobblestone!
-      </h1>
-       
-      <p>
-        
-        You should start with the
-        
-        <a
-          href="https://github.com/PebbleRoad/cobblestone"
-          noopener=""
-          noreferrer=""
-          target="_blank"
-        >
-          <strong>
-            README
-          </strong>
-        </a>
-        
-        :)
+    <img
+      alt=""
+      class="lazyload"
+      src="/_assets/images/cobblestone.png"
+    />
+     
+    <h1>
+      Welcome to Cobblestone!
+    </h1>
+     
+    <p>
       
-      </p>
-    </div>
+      You should start with the
+      
+      <a
+        href="https://github.com/PebbleRoad/cobblestone"
+        noopener=""
+        noreferrer=""
+        target="_blank"
+      >
+        <strong>
+          README
+        </strong>
+      </a>
+      
+      :)
+    
+    </p>
   </div>
 </div>
 `;

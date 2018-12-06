@@ -15,8 +15,7 @@
         <a
           href="https://github.com/PebbleRoad/cobblestone"
           target="_blank"
-          noopener
-          noreferrer
+          rel="noreferrer noopener"
         >
           <strong>README</strong>
         </a>

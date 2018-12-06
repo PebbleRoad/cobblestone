@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 
-$monospace-font: ('Source Code Pro', monospace, monospace);
+$monospace-font: ("Source Code Pro", monospace, monospace);
 $font-size-small: 0.8rem;
 
 #root {
   .vue-info {
-    @import 'hljs-themes/github';
+    @import "~highlight.js/styles/dracula";
 
     padding: 0 2rem 2rem;
 

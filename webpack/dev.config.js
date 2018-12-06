@@ -17,12 +17,12 @@ module.exports = merge(baseConfig, {
     // new HardSourceWebpackPlugin(),
   ],
   devServer: {
-    bonjour: true,
     clientLogLevel: "none",
     compress: true,
     contentBase: path.resolve(__dirname, "../dist"),
     disableHostCheck: true,
     historyApiFallback: true,
+    host: "0.0.0.0",
     port: 3000,
     noInfo: true,
     overlay: true,

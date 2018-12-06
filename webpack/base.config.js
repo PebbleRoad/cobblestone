@@ -16,10 +16,12 @@ const DEV_MODE = process.env.NODE_ENV !== "production";
 
 module.exports = {
   entry: {
-    app: path.resolve(__dirname, "../src/app/index.js"),
-    carapace: path.resolve(__dirname, "../src/styles/carapace.scss"),
+    babelPolyfill: "@babel/polyfill",
+    customEventPolyfill: "custom-event-polyfill",
     lazysizes: "lazysizes",
+    app: path.resolve(__dirname, "../src/app/index.js"),
     scripts: path.resolve(__dirname, "../src/scripts/index.js"),
+    carapace: path.resolve(__dirname, "../src/styles/carapace.scss"),
   },
   output: {
     filename: DEV_MODE
@@ -170,6 +172,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "../src/public/index.html"),
       filename: path.resolve(__dirname, "../dist/index.html"),
+      inject: "head",
       minify: {
         collapseWhitespace: true,
         useShortDoctype: true,
@@ -183,9 +186,8 @@ module.exports = {
     // ===========================
     ///
     new ScriptExtHtmlWebpackPlugin({
-      defaultAttribute: "async",
-      defer: ["scripts"],
-      sync: ["app", "carapace"],
+      defaultAttribute: "defer",
+      async: ["carapace"],
     }),
 
     ///

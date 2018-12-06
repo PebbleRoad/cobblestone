@@ -45,7 +45,9 @@ Make sure you have these installed:
 - 😴&ensp;[**lazysizes**](https://github.com/aFarkas/lazysizes) for lazy-loaded, responsive images
 - 🤖&ensp;[**Babel**](https://babeljs.io/), [**ES6+**](https://www.ecma-international.org/ecma-262/6.0/) for writing JavaScript
 - 📖&ensp;[**Storybook**](https://storybook.js.org) for UI component development environment
-- ✅&ensp;[**Jest**](https://jestjs.io/), [**Cypress**](https://cypress.io) and [**Backstop**](https://github.com/garris/BackstopJS) for testing
+- ✅&ensp;[**Jest**](https://jestjs.io/) + [**Cypress**](https://cypress.io) for automated testing
+- ✋🏼&ensp;[**BackstopJS**](https://github.com/garris/BackstopJS) for visual regression testing
+- 🕶&ensp;[**cypress-axe**]() for A11y validation
 - 💄&ensp;[**Prettier**](https://prettier.io/) for opinionated code formatting
 - 📂&ensp;Opinionated folder structure for separation of concerns
 - 👻&ensp;Bring-your-own headless CMS

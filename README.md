@@ -52,28 +52,28 @@ _CLI utility for project scaffolding is a work-in-progress._
 
 ## Package scripts
 
-The following table details scripts that can be executed with `yarn`:
+The following table details scripts that can be executed with `yarn SCRIPT_NAME`:
 
-| `$ yarn`           | Description                                                                                      |
-| :----------------- | :----------------------------------------------------------------------------------------------- |
-| `dev`              | Start the app development server: <br>[**`localhost:3000/`**](http://localhost:3000/)            |
-| `fetch`            | Fetch data from the CMS and write to `src/data/`                                                 |
-| `build`            | Generate the optimized production app build in `dist/`                                           |
-| `serve`            | Serve the `dist/` folder locally: <br>[**`localhost:3333/`**](http://localhost:3333/)            |
-| `analyze`          | Run and display an analysis of the Webpack app bundle size                                       |
-| `storybook`        | Start the Storybook development server: <br>[**`localhost:4000/`**](http://localhost:4000/)      |
-| `storybook:build`  | Export a static Storybook to `.storybook/dist`                                                   |
-| `storybook:serve`  | Serve the `.storybook/dist/` folder locally: <br>[**`localhost:4444/`**](http://localhost:4444/) |
-| `test`             | Run all Jest, Cypress and Backstop tests                                                         |
-| `├─ test:jest`     | Run all Jest tests                                                                               |
-| `├─ test:cypress`  | Ensure the dev server is running, then run all Cypress tests                                     |
-| `└─ test:backstop` | Run all Backstop tests                                                                           |
-| `cypress:open`     | Open the Cypress dashboard                                                                       |
-| `cypress:run`      | Run all Cypress tests                                                                            |
-| `backstop:report`  | Open the Backstop report GUI                                                                     |
-| `backstop:approve` | Approve the current Backstop snapshots                                                           |
-| `backstop:run-dev` | Run Backstop tests in the development (using Docker)                                             |
-| `backstop:run-ci`  | Run Backstop tests in a CI environment                                                           |
+| Script name        | Description                                                  | Notes                                                    |
+| :----------------- | :----------------------------------------------------------- | :------------------------------------------------------- |
+| `dev`              | Start the app development server                             | [**`localhost:3000/`**](http://localhost:3000/)          |
+| `fetch`            | Fetch data from the CMS and write to `src/data/`             | You'll need to customize `lib/scripts/fetch-from-cms.js` |
+| `build`            | Build the app for production                                 | Generated in `dist/`                                     |
+| `serve`            | Serve the production build locally                           | [**`localhost:3333/`**](http://localhost:3333/)          |
+| `analyze`          | Run and display an analysis of the Webpack app bundle size   | [**`localhost:8888/`**](http://localhost:8888/)          |
+| `storybook`        | Start the Storybook development server                       | [**`localhost:4000/`**](http://localhost:4000/)          |
+| `storybook:build`  | Generate and export a static build of                        | Generated in `.storybook/dist/`                          |
+| `storybook:serve`  | Serve the `.storybook/dist/` folder locally                  | [**`localhost:4444/`**](http://localhost:4444/)          |
+| `test`             | Run all Jest, Cypress and Backstop tests                     |                                                          |
+| `├─ test:jest`     | Run all Jest tests                                           |                                                          |
+| `├─ test:cypress`  | Ensure the dev server is running, then run all Cypress tests |                                                          |
+| `└─ test:backstop` | Run all Backstop tests                                       |                                                          |
+| `cypress:open`     | Open the Cypress dashboard                                   |                                                          |
+| `cypress:run`      | Run all Cypress tests                                        |                                                          |
+| `backstop:report`  | Open the Backstop report GUI                                 |                                                          |
+| `backstop:approve` | Approve the current Backstop snapshots                       |                                                          |
+| `backstop:run-dev` | Run Backstop tests in the development (using Docker)         |                                                          |
+| `backstop:run-ci`  | Run Backstop tests in a CI environment                       |                                                          |
 
 ## Project structure
 
@@ -130,7 +130,7 @@ The production build is generated in the `dist/` folder by the Webpack build sys
 - Provides code splitting with Webpack dynamic imports
 - Includes an offline Service Worker, so the app works offline
 - Generates favicons and a PWA-compatible `manifest.json` file
-- Autoprefixes CSS for compatability with older browsers
+- Autoprefixes CSS for compatibility with older browsers
   <!-- - Includes polyfills for compatibility down to IE10 -->
   </details>
 
@@ -199,7 +199,7 @@ The `lib/` folder is meant for customized internal scripts and utilities that ma
 
 ### Configuring app routes
 
-Routes (i.e. URL's) for the app are defined in `src/app/routes.js`. Visit the [Vue router documentation](https://router.vuejs.org/) for more information.
+Routes (i.e. URLs) for the app are defined in `src/app/routes.js`. Visit the [Vue router documentation](https://router.vuejs.org/) for more information.
 
 ### Creating router views
 

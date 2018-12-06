@@ -17,7 +17,7 @@
 **Clone this repository and use it as a boilerplate:**
 
 ```
-$ git@github.com:PebbleRoad/cobblestone.git my-project
+$ git clone git@github.com:PebbleRoad/cobblestone.git my-project
 ```
 
 Make sure you have these installed:

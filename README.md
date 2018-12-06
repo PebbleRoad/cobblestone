@@ -69,7 +69,8 @@ These scripts can be executed by running `yarn SCRIPT_NAME`:
 | `├─ test:cypress`  | Ensure the dev server is running, then run all Cypress tests |                                                          |
 | `└─ test:backstop` | Run all Backstop tests                                       |                                                          |
 | `cypress:open`     | Open the Cypress dashboard                                   |                                                          |
-| `cypress:run`      | Run all Cypress tests                                        |                                                          |
+| `cypress:app`      | Run Cypress e2e tests                                        |                                                          |
+| `cypress:app`      | Run Cypress component tests                                  |                                                          |
 | `backstop:report`  | Open the Backstop report GUI                                 |                                                          |
 | `backstop:approve` | Approve the current Backstop snapshots                       |                                                          |
 | `backstop:run-dev` | Run Backstop tests in the development (using Docker)         |                                                          |

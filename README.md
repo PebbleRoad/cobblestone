@@ -132,7 +132,6 @@ The production build is generated in the `dist/` folder by the Webpack build sys
 - Generates favicons and a PWA-compatible `manifest.json` file
 - Autoprefixes CSS for compatibility with older browsers
   <!-- - Includes polyfills for compatibility down to IE10 -->
-  </details>
 
 ---
 

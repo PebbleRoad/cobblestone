@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "yarn fetch && NODE_ENV=development webpack-dev-server --config webpack/dev.config.js --progress --watch --hot",
     "build": "yarn fetch && NODE_ENV=production webpack --config webpack/prod.config.js --progress",
-    "fetch": "echo 'CUSTOMIZE THIS SCRIPT TO FETCH DATA FROM YOUR CMS'",
+    "fetch": "node lib/scripts/fetch-from-cms.js",
     "serve": "static --gzip --port 3333 --host-address 0.0.0.0 --cache 144000 dist",
     "analyze": "NODE_ENV=production webpack --config webpack/analyze.config.js",
     "storybook": "start-storybook -p 4000 -c .storybook -s .storybook/dist & vue-devtools",

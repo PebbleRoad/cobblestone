@@ -9,6 +9,7 @@ const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackExcludeEmptyAssetsPlugin = require("html-webpack-exclude-empty-assets-plugin");
 const ScriptExtHtmlWebpackPlugin = require("script-ext-html-webpack-plugin");
 const WebappWebpackPlugin = require("webapp-webpack-plugin");
 
@@ -180,6 +181,12 @@ module.exports = {
         minifyJS: true,
       },
     }),
+
+    ///
+    // Exclude empty assets
+    // ====================
+    ///
+    new HtmlWebpackExcludeEmptyAssetsPlugin(),
 
     ///
     // Configure script extensions

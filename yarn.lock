@@ -7938,6 +7938,11 @@ html-tags@^2.0.0:
   resolved "https://registry.yarnpkg.com/html-tags/-/html-tags-2.0.0.tgz#10b30a386085f43cede353cc8fa7cb0deeea668b"
   integrity sha1-ELMKOGCF9Dzt41PMj6fLDe7qZos=
 
+html-webpack-exclude-empty-assets-plugin@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/html-webpack-exclude-empty-assets-plugin/-/html-webpack-exclude-empty-assets-plugin-0.1.1.tgz#cafb2badaff3bf678192175e33bddf9a76bf366a"
+  integrity sha512-ToRGYc3lpdO+QI/RxY2hBctEUsGdPCb9AKda4Nlf09x+p4YxMMNFF+5QW5AKqL95ojr/X0YyEvbYpcw66V4cjw==
+
 html-webpack-plugin@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-3.2.0.tgz#b01abbd723acaaa7b37b6af4492ebda03d9dd37b"

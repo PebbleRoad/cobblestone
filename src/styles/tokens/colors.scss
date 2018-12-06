@@ -1,13 +1,16 @@
-@include set(color, (
-  black: #030303,
-  white: #f0f0f0,
-  grey: (
-    xlight: #e8e8e8,
-    light: #9f9f9f,
-    dark: #363636,
-    xdark: #202020
-  ),
-  blue: (
-    _: #0294f7
+@include set(
+  color,
+  (
+    black: #030303,
+    white: #f0f0f0,
+    grey: (
+      xlight: #e8e8e8,
+      light: #9f9f9f,
+      dark: #363636,
+      xdark: #202020,
+    ),
+    blue: (
+      _: #265fc7,
+    ),
   )
-));
+);

@@ -205,14 +205,6 @@ The `lib/` folder is meant for customized internal scripts and utilities that ma
 
 ## Recipes
 
-### Configuring app routes
-
-Routes (i.e. URLs) for the app are defined in `src/app/routes.js`. Visit the [Vue router documentation](https://router.vuejs.org/) for more information.
-
-### Creating router views
-
-Vue components in `src/app/views/` serve as router views.
-
 ### Managing design tokens
 
 Design tokens are defined in `src/styles/tokens/`.
@@ -230,23 +222,48 @@ To create a new component called `ComponentName`, create the following files:
 
 _CLI utility for component scaffolding is a work-in-progress._
 
+### Creating router views
+
+Vue components in `src/app/views/` serve as router views.
+
+### Configuring app routes
+
+Routes (i.e. URLs) for the app are defined in `src/app/routes.js`.
+
+Visit the [Vue router documentation](https://router.vuejs.org/) for more information.
+
 ### Writing component stories
 
-Refer to the [Storybook documentation](https://storybook.js.org/basics/guide-vue/#write-your-stories) and example component story.
+Component stories serve as content for Storybook. They live in the same folder as the component's Vue file.
+
+- Stories are located in the `src/components/ComponentName/` folder
+
+Refer to the [Storybook documentation](https://storybook.js.org/basics/guide-vue/#write-your-stories) for how to write stories.
 
 ### Writing and running tests
 
-#### Component unit tests
+#### Component unit and integration tests
 
-Component unit tests are located inside the component folder, and exist as a `ComponentName.test.js` file.
+Component unit and integration tests can be written run by either Cypress or Jest.
 
-#### Integration/E2E tests
+- **For Cypress**<br>
+  `tests/cypress/integration/components/ComponentName/ComponentName.spec.js`
 
-Integration/E2E tests are located in the `tests/cypress/integration/` folder.
+- **For Jest**<br>
+  `src/components/ComponentName/ComponentName.spec.js`
+
+#### App integration and E2E tests
+
+We use Cypress for app integration and E2E.
+
+- Cypress test specs are located in the `tests/cypress/integration/app/` folder
 
 #### Visual regression testing
 
-Backstop test scenarios are defined in `tests/backstop/scenarios.js`. Backstop configuration is defined in `backstop.config.js`.
+We use BackstopJS for visual regression testing.
+
+- Backstop test scenarios are defined in `tests/backstop/scenarios.js`
+- Backstop configuration is defined in `./backstop.config.js`
 
 ### Configuring Webpack
 

@@ -14,7 +14,7 @@
 
 ## What is Cobblestone?
 
-Cobblestone is a collection of files, folders and configuration which developers can use as a starting point to **create highly performant, well-tested and easily maintainable static websites** with ease.
+Cobblestone is a collection of files, folders and configuration which developers can use as a starting point to **create highly performant, well-tested and maintainable static websites** with ease.
 
 ## What's included?
 

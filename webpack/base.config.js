@@ -170,7 +170,7 @@ module.exports = {
     // =======================
     ///
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "../src/public/index.html"),
+      template: path.resolve(__dirname, "../src/html/index.html"),
       filename: path.resolve(__dirname, "../dist/index.html"),
       inject: "head",
       minify: {

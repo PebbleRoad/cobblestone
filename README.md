@@ -164,12 +164,14 @@ The `webpack/` folder contains configuration files for Webpack. Configuration is
 
 #### Default Webpack entry points
 
-| Name          | Path                       | Description                                                        |
-| :------------ | :------------------------- | :----------------------------------------------------------------- |
-| **app**       | `src/app/index.js`         | Application code                                                   |
-| **carapace**  | `src/styles/carapace.scss` | Carapace styles                                                    |
-| **lazysizes** | `node_modules/lazysizes`   | lazysizes library                                                  |
-| **scripts**   | `src/scripts/index.js`     | Global scripts entry point<br>_(has to be loaded after lazysizes)_ |
+| Name                    | Path                                 | Description                                                        |
+| :---------------------- | :----------------------------------- | :----------------------------------------------------------------- |
+| **babelPolyfill**       | `node_modules/@babel/polyfill`       | Adds ES2015+ support for IE10+                                     |
+| **customEventPolyfill** | `node_modules/custom-event-polyfill` | Polyfills `window.CustomEvent`                                     |
+| **app**                 | `src/app/index.js`                   | Application code                                                   |
+| **carapace**            | `src/styles/carapace.scss`           | Carapace styles                                                    |
+| **lazysizes**           | `node_modules/lazysizes`             | lazysizes library                                                  |
+| **scripts**             | `src/scripts/index.js`               | Global scripts entry point<br>_(has to be loaded after lazysizes)_ |
 
 #### Webpack resolve aliases
 

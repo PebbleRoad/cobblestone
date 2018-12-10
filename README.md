@@ -6,7 +6,7 @@
 
 **Modern static site generator**
 
-[Getting started](#getting-started) · [Features](#features) · [Package scripts](#package-scripts) · [Project structure](#project-structure) · [Recipes](#recipes) · [FAQ](#faq)
+[Getting started](#getting-started) · [Package scripts](#package-scripts) · [Project structure](#project-structure) · [Recipes](#recipes) · [FAQ](#faq)
 
 ---
 

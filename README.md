@@ -4,13 +4,33 @@
 
 # Cobblestone
 
-**Modern static site framework and generator**
+**Modern static site generator**
 
 [Getting started](#getting-started) · [Features](#features) · [Package scripts](#package-scripts) · [Project structure](#project-structure) · [Recipes](#recipes) · [FAQ](#faq)
 
 ---
 
 </div>
+
+## What is Cobblestone?
+
+Cobblestone is a collection of files, folders and configuration which developers can use as a starting point to **create highly performant, well-tested and easily maintainable static websites** with ease.
+
+## What's included?
+
+- 📦&ensp;[**Webpack**](https://webpack.js.org/) for dev server and production build
+- 🖼&ensp;[**Vue.js**](https://vuejs.org) for routing, views, and components
+- ⚡️&ensp;[**Prerenderer**](https://github.com/chrisvfritz/prerender-spa-plugin/) for static-site generation from a SPA
+- 🎨&ensp;[**Sass**](https://sass-lang.com/), [**Scarab**](https://scarab.style), [**PostCSS**](https://github.com/postcss/postcss) for styling
+- 😴&ensp;[**lazysizes**](https://github.com/aFarkas/lazysizes) for lazy-loaded, responsive images
+- 🤖&ensp;[**Babel**](https://babeljs.io/), [**ES6+**](https://www.ecma-international.org/ecma-262/6.0/) for writing JavaScript
+- 📖&ensp;[**Storybook**](https://storybook.js.org) for UI component development environment
+- ✅&ensp;[**Jest**](https://jestjs.io/) + [**Cypress**](https://cypress.io) for automated testing
+- ✋🏼&ensp;[**BackstopJS**](https://github.com/garris/BackstopJS) for visual regression testing
+- 🕶&ensp;[**cypress-axe**]() for A11y validation
+- 💄&ensp;[**Prettier**](https://prettier.io/) for opinionated code formatting
+- 📂&ensp;Opinionated folder structure for separation of concerns
+- 👻&ensp;Bring-your-own headless CMS
 
 ## Getting started
 
@@ -35,22 +55,6 @@ Make sure you have these installed:
     ```
     $ cobblestone create my-project
     ``` -->
-
-## Features
-
-- 📦&ensp;[**Webpack**](https://webpack.js.org/) for dev server and production build
-- 🖼&ensp;[**Vue.js**](https://vuejs.org) for routing, views, and components
-- ⚡️&ensp;[**Prerenderer**](https://github.com/chrisvfritz/prerender-spa-plugin/) for static-site generation from a SPA
-- 🎨&ensp;[**Sass**](https://sass-lang.com/), [**Scarab**](https://scarab.style), [**PostCSS**](https://github.com/postcss/postcss) for styling
-- 😴&ensp;[**lazysizes**](https://github.com/aFarkas/lazysizes) for lazy-loaded, responsive images
-- 🤖&ensp;[**Babel**](https://babeljs.io/), [**ES6+**](https://www.ecma-international.org/ecma-262/6.0/) for writing JavaScript
-- 📖&ensp;[**Storybook**](https://storybook.js.org) for UI component development environment
-- ✅&ensp;[**Jest**](https://jestjs.io/) + [**Cypress**](https://cypress.io) for automated testing
-- ✋🏼&ensp;[**BackstopJS**](https://github.com/garris/BackstopJS) for visual regression testing
-- 🕶&ensp;[**cypress-axe**]() for A11y validation
-- 💄&ensp;[**Prettier**](https://prettier.io/) for opinionated code formatting
-- 📂&ensp;Opinionated folder structure for separation of concerns
-- 👻&ensp;Bring-your-own headless CMS
 
 ## Package scripts
 

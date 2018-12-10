@@ -62,14 +62,17 @@ These scripts can be executed by running `yarn SCRIPT_NAME`:
 
 | Script name        | Description                                                  | Notes                                                    |
 | :----------------- | :----------------------------------------------------------- | :------------------------------------------------------- |
+| **Development**    |
 | `dev`              | Start the app development server                             | [**`localhost:3000/`**](http://localhost:3000/)          |
 | `fetch`            | Fetch data from the CMS and write to `src/data/`             | You'll need to customize `lib/scripts/fetch-from-cms.js` |
 | `build`            | Build the app for production                                 | Generated in `dist/`                                     |
 | `serve`            | Serve the production build locally                           | [**`localhost:3333/`**](http://localhost:3333/)          |
 | `analyze`          | Run and display an analysis of the Webpack app bundle size   | [**`localhost:8888/`**](http://localhost:8888/)          |
+| **Storybook**      |
 | `storybook`        | Start the Storybook development server                       | [**`localhost:4000/`**](http://localhost:4000/)          |
 | `storybook:build`  | Generate and export a static build of                        | Generated in `.storybook/dist/`                          |
 | `storybook:serve`  | Serve the `.storybook/dist/` folder locally                  | [**`localhost:4444/`**](http://localhost:4444/)          |
+| **Testing**        |
 | `test`             | Run all Jest, Cypress and Backstop tests                     |                                                          |
 | `├─ test:jest`     | Run all Jest tests                                           |                                                          |
 | `├─ test:cypress`  | Ensure the dev server is running, then run all Cypress tests |                                                          |

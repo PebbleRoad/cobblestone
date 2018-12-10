@@ -40,7 +40,7 @@ Cobblestone is a collection of files, folders and configuration which developers
 $ git clone git@github.com:PebbleRoad/cobblestone.git my-project
 ```
 
-Make sure you have these installed:
+**Make sure you have these installed:**
 
 - [Node.js](https://nodejs.org/en/) + [Yarn](https://yarnpkg.com/en/)
 - [Docker](https://www.docker.com/) + [BackstopJS Docker image](https://hub.docker.com/r/backstopjs/backstopjs/)
@@ -55,6 +55,13 @@ Make sure you have these installed:
     ```
     $ cobblestone create my-project
     ``` -->
+
+**To start developing:**
+
+```
+$ cd my project
+$ yarn dev # start the development server
+```
 
 ## Package scripts
 

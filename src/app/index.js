@@ -9,6 +9,8 @@ import "./plugins.js";
 // Import styles
 import "~Styles/style.scss";
 
+console.warn("👋  hello from `src/app/index.js`");
+
 // Configure Vue Router
 const router = new VueRouter({
   mode: "history",
@@ -25,6 +27,4 @@ const root = new Vue({
   },
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  root.$mount("#app");
-});
+root.$mount("#app");

@@ -16,12 +16,20 @@ const DEV_MODE = process.env.NODE_ENV !== "production";
 
 module.exports = {
   entry: {
-    babelPolyfill: "@babel/polyfill",
-    customEventPolyfill: "custom-event-polyfill",
-    lazysizes: "lazysizes",
-    app: path.resolve(__dirname, "../src/app/index.js"),
-    scripts: path.resolve(__dirname, "../src/scripts/index.js"),
     carapace: path.resolve(__dirname, "../src/styles/carapace.scss"),
+    polyfillBabel: "@babel/polyfill",
+    polyfillCustomEvent: "custom-event-polyfill",
+    polyfillLoadBabel: path.resolve(
+      __dirname,
+      "../src/scripts/polyfills/load-babel"
+    ),
+    polyfillLoadCustomEvent: path.resolve(
+      __dirname,
+      "../src/scripts/polyfills/load-custom-event"
+    ),
+    lazysizes: "lazysizes",
+    global: path.resolve(__dirname, "../src/scripts/globals/index.js"),
+    app: path.resolve(__dirname, "../src/app/index.js"),
   },
   output: {
     filename: DEV_MODE
@@ -172,7 +180,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "../src/public/index.html"),
       filename: path.resolve(__dirname, "../dist/index.html"),
-      inject: "head",
+      inject: false,
       minify: {
         collapseWhitespace: true,
         useShortDoctype: true,
@@ -187,7 +195,11 @@ module.exports = {
     ///
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: "defer",
-      async: ["carapace"],
+      async: [
+        //"carapace",
+        //"polyfillLoader",
+        "global",
+      ],
     }),
 
     ///

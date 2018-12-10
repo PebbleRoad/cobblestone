@@ -8,8 +8,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="manifest" href="/_assets/favicon/manifest.json">
   <style>[v-cloak] {display: none;}</style>
+  <script src="<%= htmlWebpackPlugin.files.chunks.lazysizes.entry %>" defer></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.global.entry %>" defer></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.app.entry %>" defer></script>
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.app.entry.replace('.bundle', '').replace('.js', '.css') %>">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.carapace.entry.replace('.bundle', '').replace('.js', '.css') %>">
 </head>
 <body>
   <div id="app"></div>
+
+  <div id="_polyfill-babel">
+    <script src="<%= htmlWebpackPlugin.files.chunks.polyfillLoadBabel.entry %>"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.polyfillBabel.entry %>" defer></script>
+    <script>alert('babel loaded')</script>
+  </div>
+
+  <div id="_polyfill-custom-events">
+    <script src="<%= htmlWebpackPlugin.files.chunks.polyfillLoadCustomEvent.entry %>"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.polyfillCustomEvent.entry %>" defer></script>
+  </div>
 </body>
 </html>

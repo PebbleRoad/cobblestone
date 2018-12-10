@@ -244,7 +244,7 @@ Refer to the [Storybook documentation](https://storybook.js.org/basics/guide-vue
 
 #### Component unit and integration tests
 
-Component unit and integration tests can be written run by either Cypress or Jest.
+Component unit and integration tests can be run by either Cypress or Jest.
 
 - **For Cypress**<br>
   `tests/cypress/integration/components/ComponentName/ComponentName.spec.js`

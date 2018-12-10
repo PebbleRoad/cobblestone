@@ -172,14 +172,14 @@ The `webpack/` folder contains configuration files for Webpack. Configuration is
 
 #### Default Webpack entry points
 
-| Name                    | Path                                 | Description                                                        |
-| :---------------------- | :----------------------------------- | :----------------------------------------------------------------- |
-| **babelPolyfill**       | `node_modules/@babel/polyfill`       | Adds ES2015+ support for IE10+                                     |
-| **customEventPolyfill** | `node_modules/custom-event-polyfill` | Polyfills `window.CustomEvent`                                     |
-| **app**                 | `src/app/index.js`                   | Application code                                                   |
-| **carapace**            | `src/styles/carapace.scss`           | Carapace styles                                                    |
-| **lazysizes**           | `node_modules/lazysizes`             | lazysizes library                                                  |
-| **scripts**             | `src/scripts/index.js`               | Global scripts entry point<br>_(has to be loaded after lazysizes)_ |
+| Name                    | Path                                 | Description                                                            |
+| :---------------------- | :----------------------------------- | :--------------------------------------------------------------------- |
+| **babelPolyfill**       | `node_modules/@babel/polyfill`       | For ES2015+ support in IE10+                                           |
+| **customEventPolyfill** | `node_modules/custom-event-polyfill` | Polyfill for `window.CustomEvent`                                      |
+| **app**                 | `src/app/index.js`                   | Application source code                                                |
+| **carapace**            | `src/styles/carapace.scss`           | CSS utility classes                                                    |
+| **lazysizes**           | `node_modules/lazysizes`             | Library for lazy-loaded, responsive images                             |
+| **scripts**             | `src/scripts/index.js`               | Entry point for global scripts<br>_(has to be loaded after lazysizes)_ |
 
 #### Webpack resolve aliases
 
@@ -227,20 +227,24 @@ To create a new component called `ComponentName`, create the following files:
 
 - `src/components/ComponentName/ComponentName.md`
 - `src/components/ComponentName/ComponentName.stories.js`
-- `src/components/ComponentName/ComponentName.test.js`
 - `src/components/ComponentName/ComponentName.vue`
 
-_CLI utility for component scaffolding is a work-in-progress._
+And for component tests,
+
+- **With Cypress**: `tests/cypress/integration/components/ComponentName.spec.js`
+- **With Jest**: `src/components/ComponentName/ComponentName.spec.js`
+
+<!-- _CLI utility for component scaffolding is a work-in-progress._ -->
 
 ### Creating router views
 
-Vue components in `src/app/views/` serve as router views.
+Views are defined as Vue components in the `src/app/views/` folder.
 
 ### Configuring app routes
 
-Routes (i.e. URLs) for the app are defined in `src/app/routes.js`.
+We use `vue-router` for routing. The router is configured in `src/app/routes.js`. This file maps routes (i.e. URLs) to router views.
 
-Visit the [Vue router documentation](https://router.vuejs.org/) for more information.
+Visit the [Vue router documentation](https://router.vuejs.org/) for more information on configuring `vue-router`.
 
 ### Writing component stories
 
@@ -264,7 +268,7 @@ Component unit and integration tests can be run by either Cypress or Jest.
 
 #### App integration and E2E tests
 
-We use Cypress for app integration and E2E.
+We use Cypress for app integration and E2E tests.
 
 - Cypress test specs are located in the `tests/cypress/integration/app/` folder
 

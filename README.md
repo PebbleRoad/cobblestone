@@ -133,8 +133,7 @@ The production build is generated in the `dist/` folder by the Webpack build sys
 - Provides code splitting with Webpack dynamic imports
 - Includes an offline Service Worker, so the app works offline
 - Generates favicons and a PWA-compatible `manifest.json` file
-- Autoprefixes CSS for compatibility with older browsers
-  <!-- - Includes polyfills for compatibility down to IE10 -->
+- Polyfills JavaScript and CSS for browser support down to IE10
 
 ---
 

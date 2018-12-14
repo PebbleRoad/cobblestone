@@ -285,6 +285,10 @@ We use Cypress for app integration and E2E tests.
 
 - Cypress test specs are located in the `tests/cypress/integration/app/` folder
 
+#### Accessibility validation
+
+We use [`cypress-axe`](https://github.com/avanslaars/cypress-axe) for a11y validation. Use the provided `cy.injectAxe()` and `cy.checkA11y()` Cypress commands to test accessibility within components or at the application level.
+
 #### Visual regression testing
 
 We use BackstopJS for visual regression testing.

@@ -4,4 +4,4 @@ const ViewHome = () => import("~Views/Home.vue");
 // Route configuration
 const routes = [{ path: "/", component: ViewHome }];
 
-module.exports = routes;
+module.exports = { routes };

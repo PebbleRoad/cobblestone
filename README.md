@@ -110,7 +110,7 @@ The `src/` folder contains the project source files. These files are processed b
 | 📄  | `│ ├── App.vue`        | Root App component                       |
 | 📄  | `│ ├── index.js`       | Application entry point                  |
 | 📄  | `│ ├── plugins.js`     | Vue plugin configuration                 |
-| 📄  | `│ ├── routes.js`      | App route configuration                  |
+| 📄  | `│ ├── router.js`      | Vue router configuration                 |
 | 📁  | `│ └── views/`         | App views                                |
 | 📁  | `├── components/`      | Vue components                           |
 | 📁  | `├── assets/`          | Static asset files                       |
@@ -242,7 +242,7 @@ Views are defined as Vue components in the `src/app/views/` folder.
 
 ### Configuring app routes
 
-We use `vue-router` for routing. The router is configured in `src/app/routes.js`. This file maps routes (i.e. URLs) to router views.
+We use `vue-router` for routing. The router is configured in `src/app/router.js`. This file maps routes (i.e. URLs) to router views.
 
 Visit the [Vue router documentation](https://router.vuejs.org/) for more information on configuring `vue-router`.
 

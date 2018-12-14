@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "./App.vue";
-import routes from "./routes";
+import router from "./router";
 
 // Import Vue plugin configuration
 import "./plugins.js";
@@ -10,15 +10,15 @@ import "./plugins.js";
 import "~Styles/style.scss";
 
 // Configure Vue Router
-const router = new VueRouter({
+const Router = new VueRouter({
   mode: "history",
   root: "/",
-  routes,
+  routes: router.routes,
 });
 
 // Initialize Vue
 const root = new Vue({
-  router,
+  router: Router,
   render: h => h(App),
   mounted() {
     document.dispatchEvent(new CustomEvent("app.rendered"));

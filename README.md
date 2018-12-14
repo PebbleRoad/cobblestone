@@ -241,7 +241,7 @@ And for component tests,
 
 ### Creating router views
 
-Views are defined as Vue components in the `src/app/views/` folder.
+Views are defined as Vue components in the `src/views/` folder.
 
 ### Configuring app routes
 

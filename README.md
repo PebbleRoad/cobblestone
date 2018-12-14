@@ -214,8 +214,6 @@ The `storybook/` folder contains files for [Storybook configuration](https://sto
 
 The `lib/` folder is meant for customized internal scripts and utilities that may be used on a per-project basis. (e.g. a project may require a custom parser for a specific data schema)
 
----
-
 ## Recipes
 
 ### Managing design tokens
@@ -223,6 +221,8 @@ The `lib/` folder is meant for customized internal scripts and utilities that ma
 Design tokens are defined in `src/styles/tokens/`.
 
 Cobblestone's Webpack configuration makes it possible to use Scarab's design tokens and helper functions anywhere in the `src/styles/` folder and also in Vue SFC files.
+
+---
 
 ### Creating new components
 
@@ -234,20 +234,28 @@ To create a new component called `ComponentName`, create the following files:
 
 And for component tests,
 
-- **With Cypress**: `tests/cypress/integration/components/ComponentName.spec.js`
-- **With Jest**: `src/components/ComponentName/ComponentName.spec.js`
+- **With Cypress**: <br>
+  `tests/cypress/integration/components/ComponentName.spec.js`
+- **With Jest**: <br>
+  `src/components/ComponentName/ComponentName.spec.js`
 
 <!-- _CLI utility for component scaffolding is a work-in-progress._ -->
+
+---
 
 ### Creating router views
 
 Views are defined as Vue components in the `src/views/` folder.
+
+---
 
 ### Configuring app routes
 
 We use `vue-router` for routing. The router is configured in `src/app/router.js`. This file maps routes (i.e. URLs) to router views.
 
 Visit the [Vue router documentation](https://router.vuejs.org/) for more information on configuring `vue-router`.
+
+---
 
 ### Writing component stories
 
@@ -257,16 +265,18 @@ Component stories serve as content for Storybook. They live in the same folder a
 
 Refer to the [Storybook documentation](https://storybook.js.org/basics/guide-vue/#write-your-stories) for how to write stories.
 
+---
+
 ### Writing and running tests
 
 #### Component unit and integration tests
 
 Component unit and integration tests can be run by either Cypress or Jest.
 
-- **For Cypress**<br>
+- **With Cypress**: <br>
   `tests/cypress/integration/components/ComponentName/ComponentName.spec.js`
 
-- **For Jest**<br>
+- **With Jest**: <br>
   `src/components/ComponentName/ComponentName.spec.js`
 
 #### App integration and E2E tests
@@ -281,6 +291,8 @@ We use BackstopJS for visual regression testing.
 
 - Backstop test scenarios are defined in `tests/backstop/scenarios.js`
 - Backstop configuration is defined in `./backstop.config.js`
+
+---
 
 ### Configuring Webpack
 

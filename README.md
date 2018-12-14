@@ -307,6 +307,22 @@ Webpack configuration is located in the `webpack/` folder. Cobblestone uses a me
 - `prod.config.js` — Configuration for production build
 - `analyze.config.js` — Configuration for `webpack-bundle-analyzer`
 
+---
+
+### Scaffolding
+
+#### Scaffold a component
+
+You can scaffold a component with command below:
+
+```bash
+# With npm
+$ npm run component --cobblestone:scaffold_component=Button
+
+# With yarn
+$ yarn component Button
+```
+
 ## FAQ
 
 - **Why can't I use my browser's Vue devtools extension in Storybook?**  

@@ -25,7 +25,8 @@
     "backstop:approve": "backstop approve --config=backstop.config.js",
     "backstop:run": "is-ci && yarn run backstop:run-ci || yarn run backstop:run-dev",
     "backstop:run-dev": "docker run --rm -it -v $(pwd):/src backstopjs/backstopjs:latest test --config=backstop.config.js",
-    "backstop:run-ci": "backstop test --config=backstop.config.js"
+    "backstop:run-ci": "backstop test --config=backstop.config.js",
+    "component": "cry g component $npm_package_config_scaffold_component"
   },
   "browserslist": "last 2 versions",
   "config": {
@@ -34,6 +35,9 @@
       "description": "Modern static site framework and generator",
       "bgColor": "#ffffff",
       "themeColor": "#020202"
+    },
+    "scaffold": {
+      "component": ""
     }
   },
   "husky": {
@@ -81,6 +85,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-vue": "^2.0.2",
     "backstopjs": "^3.7.0",
+    "battlecry": "^0.3.4",
     "clean-webpack-plugin": "^1.0.0",
     "compression-webpack-plugin": "^2.0.0",
     "copy-webpack-plugin": "^4.6.0",

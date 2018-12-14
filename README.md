@@ -77,7 +77,7 @@ These scripts can be executed by running `yarn SCRIPT_NAME`:
 | `analyze`          | Run and display an analysis of the Webpack app bundle size   | [**`localhost:8888/`**](http://localhost:8888/)          |
 | **Storybook**      |
 | `storybook`        | Start the Storybook development server and open Vue devtools | [**`localhost:4000/`**](http://localhost:4000/)          |
-| `storybook:ci`     | Start the Storybook development server with the `--ci` flag  | Generated in `.storybook/dist/`                          |
+| `storybook:ci`     | Start the Storybook development server with the `--ci` flag  | [**`localhost:4000/`**](http://localhost:4000/)          |
 | `storybook:build`  | Generate and export a static build of                        | Generated in `.storybook/dist/`                          |
 | `storybook:serve`  | Serve the `.storybook/dist/` folder locally                  | [**`localhost:4444/`**](http://localhost:4444/)          |
 | **Testing**        |
@@ -85,9 +85,11 @@ These scripts can be executed by running `yarn SCRIPT_NAME`:
 | `├─ test:jest`     | Run all Jest tests                                           |                                                          |
 | `├─ test:cypress`  | Ensure the dev server is running, then run all Cypress tests |                                                          |
 | `└─ test:backstop` | Run all Backstop tests                                       |                                                          |
+| **Cypress**        |                                                              |                                                          |
 | `cypress:open`     | Open the Cypress dashboard                                   |                                                          |
 | `cypress:app`      | Run Cypress e2e tests                                        |                                                          |
 | `cypress:app`      | Run Cypress component tests                                  |                                                          |
+| **BackstopJS**     |                                                              |                                                          |
 | `backstop:report`  | Open the Backstop report GUI                                 |                                                          |
 | `backstop:approve` | Approve the current Backstop snapshots                       |                                                          |
 | `backstop:run-dev` | Run Backstop tests in the development (using Docker)         |                                                          |

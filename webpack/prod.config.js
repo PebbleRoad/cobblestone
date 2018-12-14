@@ -10,7 +10,6 @@ const OfflinePlugin = require("offline-plugin");
 const PrerenderSPAPlugin = require("prerender-spa-plugin");
 const PuppeteerRenderer = require("@prerenderer/renderer-puppeteer");
 const baseConfig = require("./base.config.js");
-const routes = require("../src/app/routes.js");
 
 module.exports = merge(baseConfig, {
   mode: "production",

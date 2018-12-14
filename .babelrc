@@ -20,7 +20,7 @@
           {
             "root": ["./src"],
             "alias": {
-              "~Views": "./src/app/views",
+              "~Views": "./src/views",
               "~App": "./src/app",
               "~Data": "./src/data",
               "~Styles": "./src/styles",

@@ -103,33 +103,33 @@ The `src/` folder contains the project source files. These files are processed b
 <details>
 <summary><strong>View <code>src/</code> folder structure</strong></summary>
 
-|     | File / Folder          | Description                              |
-| :-- | :--------------------- | :--------------------------------------- |
-| 📁  | `src/`                 | Project source files                     |
-| 📁  | `├── app/`             | App files                                |
-| 📄  | `│ ├── App.vue`        | Root App component                       |
-| 📄  | `│ ├── index.js`       | Application entry point                  |
-| 📄  | `│ ├── plugins.js`     | Vue plugin configuration                 |
-| 📄  | `│ ├── router.js`      | Vue router configuration                 |
-| 📁  | `│ └── views/`         | App views                                |
-| 📁  | `├── components/`      | Vue components                           |
-| 📁  | `├── assets/`          | Static asset files                       |
-| 📄  | `│ ├── favicon.png`    | Site favicon file                        |
-| 📁  | `│ ├── fonts/`         | Webfont files                            |
-| 📁  | `│ └── images/`        | Image files                              |
-| 📁  | `├── data/`            | JSON data files                          |
-| 📁  | `├── html/`            | HTML templates for `html-webpack-plugin` |
-| 📁  | `├── public/`          | Static public assets                     |
-| 📄  | `│ └── index.html`     | Main `index.html` file for SPA           |
-| 📁  | `├── scripts/`         | Global scripts                           |
-| 📁  | `└── styles/`          | Sass stylesheets                         |
-| 📁  | `‌‌ ├── config/`       | Stylesheet configuration                 |
-| 📁  | `‌‌ ├── tokens/`       | Design token configuration               |
-| 📁  | `‌‌ ├── typography/`   | Global typography styles                 |
-| 📄  | `‌‌ ├── base.scss`     | Global base styles                       |
-| 📄  | `‌‌ ├── carapace.scss` | Carapace entry point                     |
-| 📄  | `‌‌ ├── reset.scss`    | CSS reset/normalize styles               |
-| 📄  | `‌‌ └── style.scss`    | Main stylesheet entry point              |
+|     | File / Folder           | Description                              |
+| :-- | :---------------------- | :--------------------------------------- |
+| 📁  | `src/`                  | Project source files                     |
+| 📁  | `├── app/`              | App files                                |
+| 📄  | `│ ├── App.vue`         | Root App component                       |
+| 📄  | `│ ├── index.js`        | Application entry point                  |
+| 📄  | `│ ├── plugins.js`      | Vue plugin configuration                 |
+| 📄  | `│ └── router.js`       | Vue router configuration                 |
+| 📁  | `├── components/`       | Vue components                           |
+| 📁  | `├── assets/`           | Static asset files                       |
+| 📄  | `│ ├── favicon.png`     | Site favicon file                        |
+| 📁  | `│ ├── fonts/`          | Webfont files                            |
+| 📁  | `│ └── images/`         | Image files                              |
+| 📁  | `├── data/`             | JSON data files                          |
+| 📁  | `├── html/`             | HTML templates for `html-webpack-plugin` |
+| 📁  | `├── public/`           | Static public assets                     |
+| 📄  | `│ └── index.html`      | Main `index.html` file for SPA           |
+| 📁  | `├── scripts/`          | Global scripts                           |
+| 📁  | `├── styles/`           | Sass stylesheets                         |
+| 📁  | `‌‌│ ├── config/`       | Stylesheet configuration                 |
+| 📁  | `‌‌│ ├── tokens/`       | Design token configuration               |
+| 📁  | `‌‌│ ├── typography/`   | Global typography styles                 |
+| 📄  | `‌‌│ ├── base.scss`     | Global base styles                       |
+| 📄  | `‌‌│ ├── carapace.scss` | Carapace entry point                     |
+| 📄  | `‌‌│ ├── reset.scss`    | CSS reset/normalize styles               |
+| 📄  | `‌‌│ └── style.scss`    | Main stylesheet entry point              |
+| 📁  | `└── views/`            | App views                                |
 
 </details>
 
@@ -188,12 +188,12 @@ These [Webpack resolve aliases](https://webpack.js.org/configuration/resolve/#re
 | Alias             | Path             |
 | :---------------- | :--------------- |
 | **`~App`**        | `src/app`        |
-| **`~Data`**       | `src/data`       |
+| **`~Views`**      | `src/views`      |
+| **`~Components`** | `src/components` |
 | **`~Styles`**     | `src/styles`     |
 | **`~Scripts`**    | `src/scripts`    |
+| **`~Data`**       | `src/data`       |
 | **`~Assets`**     | `src/assets`     |
-| **`~Components`** | `src/components` |
-| **`~Views`**      | `src/app/views`  |
 
 ---
 

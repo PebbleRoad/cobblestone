@@ -133,7 +133,7 @@ module.exports = {
       "~Scripts": path.resolve(__dirname, "../src/scripts"),
       "~Assets": path.resolve(__dirname, "../src/assets"),
       "~Components": path.resolve(__dirname, "../src/components"),
-      "~Views": path.resolve(__dirname, "../src/app/views"),
+      "~Views": path.resolve(__dirname, "../src/views"),
     },
   },
   plugins: [

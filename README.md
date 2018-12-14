@@ -76,7 +76,8 @@ These scripts can be executed by running `yarn SCRIPT_NAME`:
 | `serve`            | Serve the production build locally                           | [**`localhost:3333/`**](http://localhost:3333/)          |
 | `analyze`          | Run and display an analysis of the Webpack app bundle size   | [**`localhost:8888/`**](http://localhost:8888/)          |
 | **Storybook**      |
-| `storybook`        | Start the Storybook development server                       | [**`localhost:4000/`**](http://localhost:4000/)          |
+| `storybook`        | Start the Storybook development server and open Vue devtools | [**`localhost:4000/`**](http://localhost:4000/)          |
+| `storybook:ci`     | Start the Storybook development server with the `--ci` flag  | Generated in `.storybook/dist/`                          |
 | `storybook:build`  | Generate and export a static build of                        | Generated in `.storybook/dist/`                          |
 | `storybook:serve`  | Serve the `.storybook/dist/` folder locally                  | [**`localhost:4444/`**](http://localhost:4444/)          |
 | **Testing**        |

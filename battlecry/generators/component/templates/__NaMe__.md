@@ -1,3 +1,3 @@
-# **NaMe**
+# __NaMe__
 
 Description for the component

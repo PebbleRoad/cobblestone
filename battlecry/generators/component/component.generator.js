@@ -12,7 +12,11 @@ export default class ComponentGenerator extends Generator {
 
   generate() {
     this.templates().forEach(file => {
-      file.saveAs(`src/components/${this.args.name}/`, this.args.name);
+      if (file.path.includes(".spec.js")) {
+        file.saveAs(`tests/cypress/integration/components/`, this.args.name);
+      } else {
+        file.saveAs(`src/components/${this.args.name}/`, this.args.name);
+      }
     });
   }
 }

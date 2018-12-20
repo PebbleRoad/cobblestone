@@ -80,6 +80,7 @@ These scripts can be executed by running `yarn SCRIPT_NAME`:
 | `build`            | Build the app for production                                 | Generated in `dist/`                                                 |
 | `serve`            | Serve the production build locally                           | [**`localhost:3333/`**](http://localhost:3333/)                      |
 | `lighthouse`       | Run Google Lighthouse performance tests                      | You must first serve the production build at `http://localhost:3333` |
+| `sitespeed`        | Run sitespeed.io performance tests                           | You must first serve the production build at `http://localhost:3333` |
 | `analyze`          | Run and display an analysis of the Webpack app bundle size   | [**`localhost:8888/`**](http://localhost:8888/)                      |
 | **Storybook**      |
 | `storybook`        | Start the Storybook development server and open Vue devtools | [**`localhost:4000/`**](http://localhost:4000/)                      |

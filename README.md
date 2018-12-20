@@ -29,7 +29,8 @@ Cobblestone is a collection of files, folders and configuration which developers
 - 📖&ensp;[**Storybook**](https://storybook.js.org) for UI component development environment
 - ✅&ensp;[**Jest**](https://jestjs.io/) + [**Cypress**](https://cypress.io) for automated testing
 - ✋🏼&ensp;[**BackstopJS**](https://github.com/garris/BackstopJS) for visual regression testing
-- 🕶&ensp;[**cypress-axe**]() for A11y validation
+- 🕶&ensp;[**cypress-axe**](https://github.com/avanslaars/cypress-axe) for A11y validation
+- ⏱&ensp;[**Lighthouse**](https://github.com/GoogleChrome/lighthouse) and [**sitespeed.io**](https://www.sitespeed.io/) for performance audits
 - 💄&ensp;[**Prettier**](https://prettier.io/) for opinionated code formatting
 - 🥁&ensp;[**Battlecry**](https://github.com/pedsmoreira/battlecry) for scaffolding files
 - 📂&ensp;Opinionated folder structure for separation of concerns
@@ -302,11 +303,12 @@ We use BackstopJS for visual regression testing.
 
 #### Performance audits
 
-Performance audits are run with Lighthouse, and need to be run on the production build.
+Performance audits are run with Lighthouse and sitespeed.io, and need to be run on the production build.
 
 1. Run `yarn build` to generate the production build
 2. Run `yarn serve` to serve the production build locally
-3. Run `yarn lighthouse` to run a performance audit
+3. Run `yarn lighthouse` to run and view a Lighthouse performance report
+4. Run `yarn sitespeed` to run and serve a sitespeed.io performance report at `http://localhost:5000`
 
 ---
 

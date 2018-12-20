@@ -15,7 +15,7 @@ export default class ComponentGenerator extends Generator {
       if (file.path.includes(".spec.js")) {
         file.saveAs(`tests/cypress/integration/components/`, this.args.name);
       } else {
-        file.saveAs(`src/components/${this.args.name}/`, this.args.name);
+        file.saveAs(`src/components/__NaMe__/`, this.args.name);
       }
     });
   }

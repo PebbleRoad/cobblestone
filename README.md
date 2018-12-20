@@ -29,6 +29,7 @@ Cobblestone is a collection of files, folders and configuration which developers
 - ✋🏼&ensp;[**BackstopJS**](https://github.com/garris/BackstopJS) for visual regression testing
 - 🕶&ensp;[**cypress-axe**]() for A11y validation
 - 💄&ensp;[**Prettier**](https://prettier.io/) for opinionated code formatting
+- 🥁&ensp;[**Battlecry**](https://github.com/pedsmoreira/battlecry) for scaffolding files
 - 📂&ensp;Opinionated folder structure for separation of concerns
 - 👻&ensp;Bring-your-own headless CMS
 

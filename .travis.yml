@@ -1,0 +1,12 @@
+language: node_js
+
+services:
+  - docker
+
+before_install:
+- docker pull backstopjs/backstopjs:latest
+
+script:
+- yarn
+- yarn test
+- yarn build

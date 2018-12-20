@@ -18,6 +18,10 @@ tests/backstop/bitmaps_test/
 tests/backstop/ci_report/
 tests/backstop/html_report/
 
+# sitespeed artifacts
+tests/sitespeed/result/*
+!tests/sitespeed/result/.gitkeep
+
 # lighthouse report
 tests/lighthouse/report.html
 

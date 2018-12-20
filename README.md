@@ -70,34 +70,34 @@ $ yarn dev # start the development server
 
 These scripts can be executed by running `yarn SCRIPT_NAME`:
 
-| Script name        | Description                                                  | Notes                                                                |
-| :----------------- | :----------------------------------------------------------- | :------------------------------------------------------------------- |
-| **Development**    |
-| `dev`              | Start the app development server                             | [**`localhost:3000/`**](http://localhost:3000/)                      |
-| `component <name>` | Scaffold a new Vue component                                 | Always use PascalCased component names                               |
-| `fetch`            | Fetch data from the CMS and write to `src/data/`             | You'll need to customize `lib/scripts/fetch-from-cms.js`             |
-| `build`            | Build the app for production                                 | Generated in `dist/`                                                 |
-| `serve`            | Serve the production build locally                           | [**`localhost:3333/`**](http://localhost:3333/)                      |
-| `lighthouse`       | Run Google Lighthouse performance tests                      | You must first serve the production build at `http://localhost:3333` |
-| `analyze`          | Run and display an analysis of the Webpack app bundle size   | [**`localhost:8888/`**](http://localhost:8888/)                      |
-| **Storybook**      |
-| `storybook`        | Start the Storybook development server and open Vue devtools | [**`localhost:4000/`**](http://localhost:4000/)                      |
-| `storybook:ci`     | Start the Storybook development server with the `--ci` flag  | [**`localhost:4000/`**](http://localhost:4000/)                      |
-| `storybook:build`  | Generate and export a static build of                        | Generated in `.storybook/dist/`                                      |
-| `storybook:serve`  | Serve the `.storybook/dist/` folder locally                  | [**`localhost:4444/`**](http://localhost:4444/)                      |
-| **Testing**        |
-| `test`             | Run all Jest, Cypress and Backstop tests                     |                                                                      |
-| `├─ test:jest`     | Run all Jest tests                                           |                                                                      |
-| `├─ test:cypress`  | Ensure the dev server is running, then run all Cypress tests |                                                                      |
-| `└─ test:backstop` | Run all Backstop tests                                       |                                                                      |
-| **Cypress**        |                                                              |                                                                      |
-| `cypress:open`     | Open the Cypress dashboard                                   |                                                                      |
-| `cypress:app`      | Run Cypress e2e tests                                        |                                                                      |
-| `cypress:app`      | Run Cypress component tests                                  |                                                                      |
-| **BackstopJS**     |                                                              |                                                                      |
-| `backstop:run`     | Run Backstop tests (using Docker)                            |                                                                      |
-| `backstop:report`  | Open the Backstop report GUI                                 |                                                                      |
-| `backstop:approve` | Approve the current Backstop snapshots                       |                                                                      |
+| Script name          | Description                                                  | Notes                                                                |
+| :------------------- | :----------------------------------------------------------- | :------------------------------------------------------------------- |
+| **Development**      |
+| `dev`                | Start the app development server                             | [**`localhost:3000/`**](http://localhost:3000/)                      |
+| `component <name>`   | Scaffold a new Vue component                                 | Always use PascalCased component names                               |
+| `fetch`              | Fetch data from the CMS and write to `src/data/`             | You'll need to customize `lib/scripts/fetch-from-cms.js`             |
+| `build`              | Build the app for production                                 | Generated in `dist/`                                                 |
+| `serve`              | Serve the production build locally                           | [**`localhost:3333/`**](http://localhost:3333/)                      |
+| `lighthouse`         | Run Google Lighthouse performance tests                      | You must first serve the production build at `http://localhost:3333` |
+| `analyze`            | Run and display an analysis of the Webpack app bundle size   | [**`localhost:8888/`**](http://localhost:8888/)                      |
+| **Storybook**        |
+| `storybook`          | Start the Storybook development server and open Vue devtools | [**`localhost:4000/`**](http://localhost:4000/)                      |
+| `storybook:ci`       | Start the Storybook development server with the `--ci` flag  | [**`localhost:4000/`**](http://localhost:4000/)                      |
+| `storybook:build`    | Generate and export a static build of                        | Generated in `.storybook/dist/`                                      |
+| `storybook:serve`    | Serve the `.storybook/dist/` folder locally                  | [**`localhost:4444/`**](http://localhost:4444/)                      |
+| **Testing**          |
+| `test`               | Run all Jest, Cypress and Backstop tests                     |                                                                      |
+| `├─ test:jest`       | Run all Jest tests                                           |                                                                      |
+| `├─ test:cypress`    | Ensure the dev server is running, then run all Cypress tests |                                                                      |
+| `└─ test:backstop`   | Run all Backstop tests                                       |                                                                      |
+| **Cypress**          |                                                              |                                                                      |
+| `cypress:open`       | Open the Cypress dashboard                                   |                                                                      |
+| `cypress:app`        | Run Cypress e2e tests                                        |                                                                      |
+| `cypress:components` | Run Cypress component tests                                  |                                                                      |
+| **BackstopJS**       |                                                              |                                                                      |
+| `backstop:run`       | Run Backstop tests (using Docker)                            |                                                                      |
+| `backstop:report`    | Open the Backstop report GUI                                 |                                                                      |
+| `backstop:approve`   | Approve the current Backstop snapshots                       |                                                                      |
 
 ## Project structure
 
@@ -230,20 +230,21 @@ Cobblestone's Webpack configuration makes it possible to use Scarab's design tok
 
 ### Creating new components
 
-To create a new component called `ComponentName`, create the following files:
+To create a new component run:
 
-- `src/components/ComponentName/ComponentName.md`
-- `src/components/ComponentName/ComponentName.stories.js`
-- `src/components/ComponentName/ComponentName.vue`
+```
+$ yarn component ComponentName
+```
 
-And for component tests,
+This will create the following files:
 
-- **With Cypress**: <br>
-  `tests/cypress/integration/components/ComponentName.spec.js`
-- **With Jest**: <br>
-  `src/components/ComponentName/ComponentName.spec.js`
-
-<!-- _CLI utility for component scaffolding is a work-in-progress._ -->
+| Description                 | Path                                                         |
+| :-------------------------- | :----------------------------------------------------------- |
+| **Component README**        | `src/components/ComponentName/ComponentName.md`              |
+| **Storybook stories**       | `src/components/ComponentName/ComponentName.stories.js`      |
+| **Vue SFC file**            | `src/components/ComponentName/ComponentName.vue`             |
+| **Jest component tests**    | `src/components/ComponentName/ComponentName.test.js`         |
+| **Cypress component tests** | `tests/cypress/integration/components/ComponentName.spec.js` |
 
 ---
 
@@ -310,22 +311,6 @@ Webpack configuration is located in the `webpack/` folder. Cobblestone uses a me
 - `dev.config.js` — Configuration for development server
 - `prod.config.js` — Configuration for production build
 - `analyze.config.js` — Configuration for `webpack-bundle-analyzer`
-
----
-
-### Scaffolding
-
-#### Scaffold a component
-
-You can scaffold a component with command below:
-
-```bash
-# With npm
-$ npm run component --cobblestone:scaffold_component=Button
-
-# With yarn
-$ yarn component Button
-```
 
 ## FAQ
 

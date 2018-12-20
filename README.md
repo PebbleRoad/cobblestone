@@ -94,6 +94,7 @@ These scripts can be executed by running `yarn SCRIPT_NAME`:
 | `backstop:approve` | Approve the current Backstop snapshots                       |                                                          |
 | `backstop:run-dev` | Run Backstop tests in the development (using Docker)         |                                                          |
 | `backstop:run-ci`  | Run Backstop tests in a CI environment                       |                                                          |
+| `lighthouse`       | Run Lighthouse on built website.                             | Run `yarn build && yarn serve` before running Lighthouse |
 
 ## Project structure
 
@@ -309,5 +310,5 @@ Webpack configuration is located in the `webpack/` folder. Cobblestone uses a me
 
 ## FAQ
 
-- **Why can't I use my browser's Vue devtools extension in Storybook?**  
+- **Why can't I use my browser's Vue devtools extension in Storybook?**
   This is a [known issue](https://github.com/storybooks/storybook/issues/1708). As a workaround, Cobblestone uses the `@vue/devtools` package, a standalone Electron version of the Vue devtools. Running `$ yarn storybook` will automatically launch the Vue devtools window. To relaunch the devtools window, run `$ yarn run vue-devtools`.

@@ -18,6 +18,9 @@ tests/backstop/bitmaps_test/
 tests/backstop/ci_report/
 tests/backstop/html_report/
 
+# lighthouse report
+tests/lighthouse/report.html
+
 # Dependency directory
 node_modules/
 

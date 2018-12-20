@@ -6,6 +6,8 @@
 
 **Modern static site generator**
 
+[![Build Status](https://api.travis-ci.com/PebbleRoad/cobblestone.svg?branch=master)](https://travis-ci.com/PebbleRoad/cobblestone)
+
 [Getting started](#getting-started) · [Package scripts](#package-scripts) · [Project structure](#project-structure) · [Recipes](#recipes) · [FAQ](#faq)
 
 ---
@@ -67,33 +69,33 @@ $ yarn dev # start the development server
 
 These scripts can be executed by running `yarn SCRIPT_NAME`:
 
-| Script name        | Description                                                  | Notes                                                    |
-| :----------------- | :----------------------------------------------------------- | :------------------------------------------------------- |
+| Script name        | Description                                                  | Notes                                                                |
+| :----------------- | :----------------------------------------------------------- | :------------------------------------------------------------------- |
 | **Development**    |
-| `dev`              | Start the app development server                             | [**`localhost:3000/`**](http://localhost:3000/)          |
-| `fetch`            | Fetch data from the CMS and write to `src/data/`             | You'll need to customize `lib/scripts/fetch-from-cms.js` |
-| `build`            | Build the app for production                                 | Generated in `dist/`                                     |
-| `serve`            | Serve the production build locally                           | [**`localhost:3333/`**](http://localhost:3333/)          |
-| `analyze`          | Run and display an analysis of the Webpack app bundle size   | [**`localhost:8888/`**](http://localhost:8888/)          |
+| `dev`              | Start the app development server                             | [**`localhost:3000/`**](http://localhost:3000/)                      |
+| `fetch`            | Fetch data from the CMS and write to `src/data/`             | You'll need to customize `lib/scripts/fetch-from-cms.js`             |
+| `build`            | Build the app for production                                 | Generated in `dist/`                                                 |
+| `serve`            | Serve the production build locally                           | [**`localhost:3333/`**](http://localhost:3333/)                      |
+| `lighthouse`       | Run Google Lighthouse performance tests                      | You must first serve the production build at `http://localhost:3333` |
+| `analyze`          | Run and display an analysis of the Webpack app bundle size   | [**`localhost:8888/`**](http://localhost:8888/)                      |
 | **Storybook**      |
-| `storybook`        | Start the Storybook development server and open Vue devtools | [**`localhost:4000/`**](http://localhost:4000/)          |
-| `storybook:ci`     | Start the Storybook development server with the `--ci` flag  | [**`localhost:4000/`**](http://localhost:4000/)          |
-| `storybook:build`  | Generate and export a static build of                        | Generated in `.storybook/dist/`                          |
-| `storybook:serve`  | Serve the `.storybook/dist/` folder locally                  | [**`localhost:4444/`**](http://localhost:4444/)          |
+| `storybook`        | Start the Storybook development server and open Vue devtools | [**`localhost:4000/`**](http://localhost:4000/)                      |
+| `storybook:ci`     | Start the Storybook development server with the `--ci` flag  | [**`localhost:4000/`**](http://localhost:4000/)                      |
+| `storybook:build`  | Generate and export a static build of                        | Generated in `.storybook/dist/`                                      |
+| `storybook:serve`  | Serve the `.storybook/dist/` folder locally                  | [**`localhost:4444/`**](http://localhost:4444/)                      |
 | **Testing**        |
-| `test`             | Run all Jest, Cypress and Backstop tests                     |                                                          |
-| `├─ test:jest`     | Run all Jest tests                                           |                                                          |
-| `├─ test:cypress`  | Ensure the dev server is running, then run all Cypress tests |                                                          |
-| `└─ test:backstop` | Run all Backstop tests                                       |                                                          |
-| **Cypress**        |                                                              |                                                          |
-| `cypress:open`     | Open the Cypress dashboard                                   |                                                          |
-| `cypress:app`      | Run Cypress e2e tests                                        |                                                          |
-| `cypress:app`      | Run Cypress component tests                                  |                                                          |
-| **BackstopJS**     |                                                              |                                                          |
-| `backstop:report`  | Open the Backstop report GUI                                 |                                                          |
-| `backstop:approve` | Approve the current Backstop snapshots                       |                                                          |
-| `backstop:run-dev` | Run Backstop tests in the development (using Docker)         |                                                          |
-| `backstop:run-ci`  | Run Backstop tests in a CI environment                       |                                                          |
+| `test`             | Run all Jest, Cypress and Backstop tests                     |                                                                      |
+| `├─ test:jest`     | Run all Jest tests                                           |                                                                      |
+| `├─ test:cypress`  | Ensure the dev server is running, then run all Cypress tests |                                                                      |
+| `└─ test:backstop` | Run all Backstop tests                                       |                                                                      |
+| **Cypress**        |                                                              |                                                                      |
+| `cypress:open`     | Open the Cypress dashboard                                   |                                                                      |
+| `cypress:app`      | Run Cypress e2e tests                                        |                                                                      |
+| `cypress:app`      | Run Cypress component tests                                  |                                                                      |
+| **BackstopJS**     |                                                              |                                                                      |
+| `backstop:run`     | Run Backstop tests (using Docker)                            |                                                                      |
+| `backstop:report`  | Open the Backstop report GUI                                 |                                                                      |
+| `backstop:approve` | Approve the current Backstop snapshots                       |                                                                      |
 
 ## Project structure
 

@@ -9,6 +9,7 @@
     "build": "yarn fetch && NODE_ENV=production webpack --config webpack/prod.config.js --progress",
     "fetch": "node lib/scripts/fetch-from-cms.js",
     "serve": "static --gzip --port 3333 --host-address 0.0.0.0 --cache 144000 dist",
+    "component": "cry g component $npm_package_config_scaffold_component",
     "analyze": "NODE_ENV=production webpack --config webpack/analyze.config.js",
     "storybook": "start-storybook -p 4000 -c .storybook -s .storybook/dist & vue-devtools",
     "storybook:ci": "start-storybook -p 4000 -c .storybook -s .storybook/dist --ci",
@@ -33,6 +34,9 @@
       "description": "Modern static site framework and generator",
       "bgColor": "#ffffff",
       "themeColor": "#020202"
+    },
+    "scaffold": {
+      "component": ""
     }
   },
   "husky": {
@@ -80,6 +84,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-vue": "^2.0.2",
     "backstopjs": "^3.7.0",
+    "battlecry": "^0.3.4",
     "clean-webpack-plugin": "^1.0.0",
     "compression-webpack-plugin": "^2.0.0",
     "copy-webpack-plugin": "^4.6.0",

@@ -31,6 +31,7 @@ Cobblestone is a collection of files, folders and configuration which developers
 - ✋🏼&ensp;[**BackstopJS**](https://github.com/garris/BackstopJS) for visual regression testing
 - 🕶&ensp;[**cypress-axe**]() for A11y validation
 - 💄&ensp;[**Prettier**](https://prettier.io/) for opinionated code formatting
+- 🥁&ensp;[**Battlecry**](https://github.com/pedsmoreira/battlecry) for scaffolding files
 - 📂&ensp;Opinionated folder structure for separation of concerns
 - 👻&ensp;Bring-your-own headless CMS
 
@@ -73,6 +74,7 @@ These scripts can be executed by running `yarn SCRIPT_NAME`:
 | :----------------- | :----------------------------------------------------------- | :------------------------------------------------------------------- |
 | **Development**    |
 | `dev`              | Start the app development server                             | [**`localhost:3000/`**](http://localhost:3000/)                      |
+| `component <name>` | Scaffold a new Vue component                                 | Always use PascalCased component names                               |
 | `fetch`            | Fetch data from the CMS and write to `src/data/`             | You'll need to customize `lib/scripts/fetch-from-cms.js`             |
 | `build`            | Build the app for production                                 | Generated in `dist/`                                                 |
 | `serve`            | Serve the production build locally                           | [**`localhost:3333/`**](http://localhost:3333/)                      |
@@ -308,6 +310,22 @@ Webpack configuration is located in the `webpack/` folder. Cobblestone uses a me
 - `dev.config.js` — Configuration for development server
 - `prod.config.js` — Configuration for production build
 - `analyze.config.js` — Configuration for `webpack-bundle-analyzer`
+
+---
+
+### Scaffolding
+
+#### Scaffold a component
+
+You can scaffold a component with command below:
+
+```bash
+# With npm
+$ npm run component --cobblestone:scaffold_component=Button
+
+# With yarn
+$ yarn component Button
+```
 
 ## FAQ
 

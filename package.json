@@ -24,9 +24,7 @@
     "cypress:components": "cypress run --headed --spec 'tests/cypress/integration/components/**/*' --config baseUrl=http://0.0.0.0:4000",
     "backstop:report": "backstop openReport --config=backstop.config.js",
     "backstop:approve": "backstop approve --config=backstop.config.js",
-    "backstop:run": "is-ci && yarn run backstop:run-ci || yarn run backstop:run-dev",
-    "backstop:run-dev": "docker run --rm -it -v $(pwd):/src backstopjs/backstopjs:latest test --config=backstop.config.js",
-    "backstop:run-ci": "backstop test --config=backstop.config.js"
+    "backstop:run": "docker run --rm -it -v $(pwd):/src backstopjs/backstopjs:latest test --config=backstop.config.js"
   },
   "browserslist": "last 2 versions",
   "config": {

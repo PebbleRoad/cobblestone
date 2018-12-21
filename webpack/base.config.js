@@ -71,7 +71,7 @@ module.exports = {
           {
             loader: DEV_MODE ? "vue-style-loader" : MiniCssExtractPlugin.loader,
             options: DEV_MODE
-              ? {}
+              ? { sourceMap: true }
               : {
                   publicPath: path.resolve(
                     __dirname,
@@ -79,19 +79,28 @@ module.exports = {
                   ),
                 },
           },
-          "css-loader",
-          "postcss-loader",
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
           {
             loader: "sass-loader",
-
-            ///
-            // `node-sass-glob-importer` seems to be incompatible with
-            // Storybook, so it has been temporarily removed from Cobblestone
-            ///
-
-            // options: {
-            //   importer: require('node-sass-glob-importer')(),
-            // },
+            options: {
+              ///
+              // `node-sass-glob-importer` seems to be incompatible with
+              // Storybook, so it has been temporarily removed from Cobblestone
+              ///
+              // importer: require('node-sass-glob-importer')(),
+              sourceMap: true,
+            },
           },
           {
             loader: "sass-resources-loader",

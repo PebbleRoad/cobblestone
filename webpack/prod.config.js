@@ -118,7 +118,9 @@ module.exports = merge(baseConfig, {
     // ==========================
     // It's always better if OfflinePlugin is the last plugin added
     ///
-    new OfflinePlugin(),
+    new OfflinePlugin({
+      responseStrategy: "network-first",
+    }),
   ],
   optimization: {
     minimizer: [

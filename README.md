@@ -63,7 +63,8 @@ $ git clone git@github.com:PebbleRoad/cobblestone.git my-project
 **To start developing:**
 
 ```
-$ cd my project
+$ cd my-project
+$ yarn
 $ yarn dev # start the development server
 ```
 

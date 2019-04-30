@@ -89,6 +89,11 @@ module.exports = {
             loader: "postcss-loader",
             options: {
               sourceMap: true,
+              plugins: [
+                require("css-mqpacker")({
+                  sort: true,
+                }),
+              ],
             },
           },
           {

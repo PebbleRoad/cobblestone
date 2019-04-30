@@ -82,13 +82,13 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              sourceMap: true,
+              sourceMap: DEV_MODE ? true : false,
             },
           },
           {
             loader: "postcss-loader",
             options: {
-              sourceMap: true,
+              sourceMap: DEV_MODE ? true : false,
               plugins: [
                 require("css-mqpacker")({
                   sort: true,
@@ -104,7 +104,7 @@ module.exports = {
               // Storybook, so it has been temporarily removed from Cobblestone
               ///
               // importer: require('node-sass-glob-importer')(),
-              sourceMap: true,
+              sourceMap: DEV_MODE ? true : false,
             },
           },
           {
